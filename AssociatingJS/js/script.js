@@ -1,9 +1,12 @@
-//Expressions - Expressions with Arrays
+//Concatenating
 
-var orangeBins = [234, 567, 883];
+var firstName = "Dave";
+var lastName = "Gall";
+var fullName = firstName + " " + lastName;
 
-var total = orangeBins[0] + orangeBins[1] + orangeBins[2];
-console.log(total);
+console.log(fullName);
+
+
 
 
 
