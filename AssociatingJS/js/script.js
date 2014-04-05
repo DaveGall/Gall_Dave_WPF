@@ -1,9 +1,6 @@
-//Arrays
+//Expressions
 
-var dogNames = ["Duke", "Jimmy", "Precious", "Dog"];
+var a = 2; //set up value and defines
+a = a + 3;
+console.log(a);
 
-dogNames[1] = "Duke";
-dogNames[4] = "Killer";
-
-alert (dogNames);
-alert (dogNames[1]);
