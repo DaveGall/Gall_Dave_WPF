@@ -2,13 +2,13 @@
 <body>
 
 <script type="text/javascript">
-//Equation is °C = 5/9 (F° - 32).
-var degFarhen = prompt("Enter the degree in Fahrenheit", "");//If you want to have a blank input box put "" instead of a value.
-var degCent;
+//Equation is °C * 1.8 + 32 = °F
+var degCent = prompt("Enter the degree in Centigrade", "");//If you want to have a blank input box put "" instead of a value.
+var degFahren;
 
-degCent = 5/9 * (degFarhen - 32);
+degFahren = degCent * 1.8 + 32;
 
-alert (degCent);
+alert (degFahren);
 </script>
 </body>
 </html>
