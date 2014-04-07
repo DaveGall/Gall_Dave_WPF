@@ -1,8 +1,9 @@
-//Assignment Operators
+//Dog Years
 
-var a = 3;
-a ++; //same as a = a + 4 you can do this with any +, -, *, / and =
-console.log(a);
+var sparkyAge = 2;
+var dogYears = sparkyAge * 7;
+console.log("Sparky is " + sparkyAge + " human years old which is " + dogYears + " in dog years");
+
 
 
 
