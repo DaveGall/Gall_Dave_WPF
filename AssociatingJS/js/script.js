@@ -1,7 +1,7 @@
 // Prompt and Alert
 
-var userInput = prompt("Enter your year of birth: ");
-console.log(userInput);
+var width = prompt("Please enter the width of a rectangle. ");
+var height = prompt("Please enter height of a rectangle. ");
 
 
 
