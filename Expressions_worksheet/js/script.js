@@ -4,7 +4,7 @@ var myArray = new Array(50, 100, 40, 80, 120); //I have added the variable array
 var totalGroceries = myArray[0] + myArray[1] + myArray[2] + myArray[3] + myArray[4];//I have added an equation to add up all the grocery bills.
 var weeklyAvg = totalGroceries / 5;//I have added an equation to find the weekly average shopping cost.
 
-console.log("You have spent a total of " + totalGroceries + " on groceries over 5 weeks. That's an average of " + (weeklyAvg) + " per week.");
+console.log("You have spent a total of $" + totalGroceries + " on groceries over 5 weeks. That's an average of $" + (weeklyAvg) + " per week.");
 
 
 
