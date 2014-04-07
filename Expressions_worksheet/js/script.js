@@ -6,6 +6,6 @@ var rectangleWidth = 10;
 var rectangleHeight = 5;
 var rectangleArea = rectangleWidth * rectangleHeight
 
-console.log(rectangleArea);
+console.log("The area of the rectangle is " + rectangleArea);
 
 
