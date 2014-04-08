@@ -6,6 +6,6 @@ var carsMPG = prompt("Next lets get how many miles per gallon your car gets on a
 var costPerGallon = prompt("What is the cost of gas per gallon? Just a numerical amount \nyou don't need a dollar sign");//another variable to get from the user.
 var gallonsNeeded = milesToDrive / carsMPG;//Constant for finding how many gallons it will take to reach the destination.
 var tripCost = gallonsNeeded * costPerGallon;//Constant for finding out how much the trip will cost.
-console.log("You will use " + )
+console.log("You will use " + parseFloat(gallonsNeeded).toFixed(2))
 
 
