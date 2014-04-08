@@ -3,3 +3,4 @@
 
 var milesToDrive = prompt("How much gas will you need and how much will it cost you?  \nTo find this out lets start with how many miles you will be driving?");//first variable/prompt to get miles to drive.
 var carsMPG = prompt("Next lets get how many miles per gallon your car gets on average?");//another variable to get data from the user for our equation.
+var costPerGallon = prompt("What is the cost of gas per gallon?");//another variable to get from the user.
