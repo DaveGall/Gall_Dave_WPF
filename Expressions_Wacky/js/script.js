@@ -7,3 +7,4 @@ var rectLength = prompt("Now the last measurement we need for your garden is the
 var rectVolume = rectHeight * rectWidth * rectLength * (80/100);//This calculation will give me and the user the amount of dirt needed to fill their garden 80%.
 var bagsNeeded = rectVolume / 1.5;//This calculation will divide the volume needed by 1.5 which is the standard garden soil bag.
 var yardsOfSoil = rectVolume / 27;//This calculation changes the cubic feet into cubic yards in case the user needs a different measurement.
+var soilWeight = rectVolume * 35;//This calculation is meant to tell the user how much the total amount of soil needed will weigh. Soil varies depending on several factors but this was a rounded weight.
