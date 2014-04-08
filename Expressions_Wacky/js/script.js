@@ -11,4 +11,4 @@ var soilWeight = rectVolume * 35;//This calculation is meant to tell the user ho
 var carTrips2 = bagsNeeded;//Just a little calculation on how many trips it will take carrying two bags at a time. I left it as the initial value because you need to load and unload the car.
 var carTrips1 = bagsNeeded * 2;//This calculation is to see how many trips you will take only carrying one bag at a time from the store to your car and the car to your garden.
 
-console.log("You will need " + parseFloat(rectVolume).toFixed(2) + " cubic feet of soil.\n");//I am trying to display the results on different lines instead of in a sentence so it will be easier to follow.
+console.log("You will need " + parseFloat(rectVolume).toFixed(2) + " cubic feet of soil.\nOr " + parseFloat(yardsOfSoil).toFixed(2) + " cubic yards of soil.\n");//I am trying to display the results on different lines instead of in a sentence so it will be easier to follow.
