@@ -8,6 +8,6 @@ var gallonsNeeded = milesToDrive / carsMPG;//Constant for finding how many gallo
 var tripCost = gallonsNeeded * costPerGallon;//Constant for finding out how much the trip will cost.
 var tripTime = milesToDrive / 60;//I have added an equation to calculate how long the trip will take.
 
-console.log("You will use " + parseFloat(gallonsNeeded).toFixed(2) + " gallons of gas on your trip. " + " The cost of your trip will be $" + parseFloat(tripCost).toFixed(2) + " if the cost of gas stays the same. \nThank you for using this service, if you would like another result just refresh the page. \nYour trip will take approximately " + parseFloat(tripTime).toFixed(2) + " hours.");//This is the final equation that will show the user the results that they came for.
+console.log("You will use " + parseFloat(gallonsNeeded).toFixed(2) + " gallons of gas on your trip. " + " The cost of your trip will be $" + parseFloat(tripCost).toFixed(2) + " if the cost of gas stays the same. \nYour trip will take approximately " + parseFloat(tripTime).toFixed(2) + " hours.\nThank you for using this service, if you would like another result just refresh the page.");//This is the final equation that will show the user the results that they came for.
 
 
