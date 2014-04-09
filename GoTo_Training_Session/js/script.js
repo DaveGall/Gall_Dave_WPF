@@ -25,3 +25,6 @@ var currentYear = 2014;
 var age = currentYear - yearBorn;
 
 console.log(age);
+
+//Alert the user on how old they are.
+alert(name+" you are "+age+" years old");
