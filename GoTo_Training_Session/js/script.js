@@ -40,3 +40,7 @@ console.log(yearsMore);
 var futureAge = age + Number(yearsMore);
 
 console.log(futureAge);
+
+console.log(name+" you are currently "+age+" in "+yearsMore+" years you will be "+futureAge+".");
+
+alert(name+" you are currently "+age+" in "+yearsMore+" years you will be "+futureAge+".");
