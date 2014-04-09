@@ -19,3 +19,8 @@ console.log(yearBorn);
 //Variable for current year
 
 var currentYear = 2014;
+//Figure out how old the user is.
+//Create a variable to hold this answer.
+
+var age = currentYear - yearBorn;
+
