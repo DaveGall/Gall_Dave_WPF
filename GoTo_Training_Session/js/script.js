@@ -15,3 +15,7 @@ alert("Welcome " +name+"! We have one more question for you.");
 var yearBorn = prompt("What year were you born?");
 
 console.log(yearBorn);
+
+//Variable for current year
+
+var currentYear = 2014;
