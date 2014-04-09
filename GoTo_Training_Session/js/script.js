@@ -7,3 +7,6 @@
 var name = prompt("Please type in your name.");
 
 console.log(name);
+
+//Create an alert that the user will see.
+alert("Welcome " +name+"! We have one more question for you.");
