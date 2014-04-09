@@ -24,3 +24,4 @@ var currentYear = 2014;
 
 var age = currentYear - yearBorn;
 
+console.log(age);
