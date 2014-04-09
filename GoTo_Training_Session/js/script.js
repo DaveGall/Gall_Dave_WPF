@@ -28,3 +28,9 @@ console.log(age);
 
 //Alert the user on how old they are.
 alert(name+" you are "+age+" years old");
+
+//Lets make it more complex!!
+//Ask the user for a future time.
+var yearsMore = prompt("How many years in the future do you want to check?");
+
+console.log(yearsMore);
