@@ -10,3 +10,7 @@ console.log(name);
 
 //Create an alert that the user will see.
 alert("Welcome " +name+"! We have one more question for you.");
+
+//Get the users birth year.
+var yearBorn = prompt("What year were you born?");
+
