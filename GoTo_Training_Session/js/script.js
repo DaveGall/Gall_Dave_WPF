@@ -14,3 +14,4 @@ alert("Welcome " +name+"! We have one more question for you.");
 //Get the users birth year.
 var yearBorn = prompt("What year were you born?");
 
+console.log(yearBorn);
