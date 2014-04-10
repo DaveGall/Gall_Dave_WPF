@@ -7,7 +7,8 @@ var hoursPerWeek = prompt("How many hours do you work in a week?");//prompt to f
 var hourlyWage = prompt("What is your hourly wage? There is no need to put a dollar sign.");//User prompt to find out their hourly wage.
 
 console.log(firstName +" "+lastName+"\n"+hoursPerWeek+" hours per week"+"\n"+"$"+hourlyWage);//This shows the user input information in a stacked format.
-var monthlyEarnings = hoursPerWeek * hourlyWage;//calculation to get the users amount of pay for a month.
+var weeklyEarnings = hoursPerWeek * hourlyWage;//calculation to get the users amount of pay for a week.
+console.log(weeklyEarnings);
 //var company = prompt("Please enter the company you work for.");//I am asking for the users company name that they work for.
 //var state = prompt("Please enter the state where your businesses home of operations is.");//Asking here for the name of the state the business resides.
 
