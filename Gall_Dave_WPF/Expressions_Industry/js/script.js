@@ -25,8 +25,8 @@ userInformation[6] = ("In 10 years you will earn: $"+tenMoreYears);//Displays th
 userInformation[7] = ("In 15 years you will have made: $"+fifteenYears);//A place setting for 15 years of income.
 userInformation[8] = ("In 20 years you will have made: $"+twentyYears);//Calc. for twenty years of work.
 
-alert(userInformation[0] +"\n"+userInformation[1]+"\n"+userInformation[2]+"\n"+userInformation[3]+"\n"+userInformation[4]+"\n"+userInformation[5]+"\n"+userInformation[6]+"\n"+userInformation[7]+"\n"+userInformation[8]);
-console.log(userInformation[0] +"\n"+userInformation[1]+"\n"+userInformation[2]+"\n"+userInformation[3]+"\n"+userInformation[4]+"\n"+userInformation[5]+"\n"+userInformation[6]+"\n"+userInformation[7]+"\n"+userInformation[8]);
+alert(userInformation[0] +"\n"+userInformation[1]+"\n"+userInformation[2]+"\n"+userInformation[3]+"\n"+userInformation[4]+"\n"+userInformation[5]+"\n"+userInformation[6]+"\n"+userInformation[7]+"\n"+userInformation[8]+"\n"+"If you would like to input different numbers then just hit refresh.");
+console.log(userInformation[0] +"\n"+userInformation[1]+"\n"+userInformation[2]+"\n"+userInformation[3]+"\n"+userInformation[4]+"\n"+userInformation[5]+"\n"+userInformation[6]+"\n"+userInformation[7]+"\n"+userInformation[8]+"\n"+"If you would like to input different numbers then just hit refresh.");
 //var company = prompt("Please enter the company you work for.");//I am asking for the users company name that they work for.
 //var state = prompt("Please enter the state where your businesses home of operations is.");//Asking here for the name of the state the business resides.
 
