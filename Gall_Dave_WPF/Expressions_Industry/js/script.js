@@ -12,6 +12,7 @@ var monthlyEarnings = weeklyEarnings * 4;//calculation for finding the users mon
 var yearlyEarnings = weeklyEarnings * 52;//Users yearly earnings for the numbers that they input.
 var tenMoreYears = yearlyEarnings * 10;//Shows how much the user will make in ten years time.
 var fifteenYears = yearlyEarnings * 15;//How much you will make in fifteen years.
+var twentyYears = yearlyEarnings * 20;//How much you will make in 20 years.
 
 var userInformation = new Array();
 userInformation[0] = ("Name: " +firstName+" "+lastName);//This will put a line for the name.
@@ -23,6 +24,7 @@ userInformation[5] = ("Yearly earnings: $"+yearlyEarnings);//Displays the users 
 userInformation[6] = ("In 10 years you will earn: $"+tenMoreYears);//Displays the result of the calculation for what you can make in ten years.
 userInformation[7] = ("In 15 years you will make: $"+fifteenYears);//A place setting for 15 years of income.
 
+alert(userInformation[0] +"\n"+userInformation[1]+"\n"+userInformation[2]+"\n"+userInformation[3]+"\n"+userInformation[4]+"\n"+userInformation[5]+"\n"+userInformation[6]+"\n"+userInformation[7]);
 console.log(userInformation[0] +"\n"+userInformation[1]+"\n"+userInformation[2]+"\n"+userInformation[3]+"\n"+userInformation[4]+"\n"+userInformation[5]+"\n"+userInformation[6]+"\n"+userInformation[7]);
 //var company = prompt("Please enter the company you work for.");//I am asking for the users company name that they work for.
 //var state = prompt("Please enter the state where your businesses home of operations is.");//Asking here for the name of the state the business resides.
