@@ -12,8 +12,9 @@ var monthlyEarnings = weeklyEarnings * 4;//calculation for finding the users mon
 var yearlyEarnings = weeklyEarnings * 52;//Users yearly earnings for the numbers that they input.
 
 var userInformation = new Array();
-userInformation[0] = ("Name: " +firstName+" "+lastName);
-userInformation[1] = hoursPerWeek;
+userInformation[0] = ("Name: " +firstName+" "+lastName);//This will put a line for the name.
+userInformation[1] = ("Hours per week: "+hoursPerWeek);//This will give a line for the hours per week.
+userInformation[2] = ("Hourly wage: "+hourlyWage);//This will give a line for displaying the hourly wage result.
 console.log(userInformation[0] +"\n"+userInformation[1]);
 //var company = prompt("Please enter the company you work for.");//I am asking for the users company name that they work for.
 //var state = prompt("Please enter the state where your businesses home of operations is.");//Asking here for the name of the state the business resides.
