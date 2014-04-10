@@ -8,7 +8,7 @@ var hourlyWage = prompt("What is your hourly wage? There is no need to put a dol
 
 console.log(firstName +" "+lastName+"\n"+hoursPerWeek+" hours per week"+"\n"+"$"+hourlyWage);//This shows the user input information in a stacked format.
 var weeklyEarnings = hoursPerWeek * hourlyWage;//calculation to get the users amount of pay for a week.
-console.log(weeklyEarnings);
+var monthlyEarnings = weeklyEarnings * 4;//calculation for finding the users monthly earnings.
 //var company = prompt("Please enter the company you work for.");//I am asking for the users company name that they work for.
 //var state = prompt("Please enter the state where your businesses home of operations is.");//Asking here for the name of the state the business resides.
 
