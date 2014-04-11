@@ -7,6 +7,19 @@ if(sunny) {
     goToTheMovies();
 }
 
+if(temp > 70){
+    goToTheBeach();
+}
+//Nesting conditionals. 
+if(sunny){
+    goToTheBeach();
+    if(warmwater){
+        wearNewSuit();
+    }
+}else{
+    goToTheMovies
+}
+
 
 
 
