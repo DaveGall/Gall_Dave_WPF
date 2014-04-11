@@ -1,13 +1,4 @@
 //David Gall, 04/11/14, Conditionals worksheet.
-//Stuff Your Face 1
-//The competitors weight determines if tey get in or not.
-//Ask for the competitors weight.
-var compWeight = Number(prompt("What is your weight? Numerical values only please."));
-
-if(compWeight >= 250){
-    //If their weight is greater than or equaled to 250 this will be the result.
-    console.log("The competitor qualifies for the heavyweight division.");
-}else{
-    //If their weight is under 250 then they need to gain more weight.
-    console.log("The competitor needs to gain some weight.");
-}
+//Celsius to Fahrenheit conversion
+//first I am going to ask for a temperature to convert from the user.
+var temp = prompt("Type in the temperature you would like to convert to Celsius or Fahrenheit.");
