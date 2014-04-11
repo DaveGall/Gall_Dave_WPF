@@ -1,24 +1,9 @@
-// Conditional Statement using if(){
-//                               }
+// Conditional logic
 
-if(sunny) {
-    goToTheBeach();
-}else{
-    goToTheMovies();
-}
+var oldEnough = true;
 
-if(temp > 70){
-    goToTheBeach();
-}
-//Nesting conditionals. 
-if(sunny){
-    goToTheBeach();
-    if(warmwater){
-        wearNewSuit();
-    }
-}else{
-    goToTheMovies
-}
+//If the child is old enough print to the console you can ride.
+
 
 
 
