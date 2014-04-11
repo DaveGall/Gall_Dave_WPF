@@ -2,3 +2,4 @@
 //Stuff Your Face 1
 //The competitors weight determines if tey get in or not.
 //Ask for the competitors weight.
+var compWeight = Number(prompt("What is your weight?"));
