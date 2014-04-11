@@ -1,17 +1,18 @@
 
-var degFahren = Number(prompt("Enter the degrees Fahrenheit", " "));
-var degCent;
+var myAge = Number(prompt("Enter your age", " "));
 
-degCent = 5/9 * (degFahren - 32);
-
-alert(parseFloat(degFahren).toFixed(2)+"\xB0 Fahrenheit is "+parseFloat(degCent).toFixed(2)+"\xB0 centigrade\n");
-console.log(degFahren+"\xB0 Fahrenheit is "+parseFloat(degCent).toFixed(2)+"\xB0 centigrade\n");
-
-if (degCent < 0){
-    console.log("That's below the freezing point of water!");
+if(myAge >= 0 && myAge <= 10){
+    console.log("myAge is between 0 and 10\n");
 }
-if(degCent === 100)
-    console.log("That's the boiling point of water!");
+if(!(myAge >= 0 && myAge <= 10)){
+    console.log("myAge is NOT between 0 and 10\n");
+}
+if(myAge >= 80 || myAge <= 10){
+    console.log("myAge is 80 or above OR 10 or below\n");
+}
+if((myAge >= 30 && myAge <= 39) || (myAge >= 80 && myAge <= 89)){
+    console.log("myAge is between 30 and 39 or myAge is between 80 and 89");
+}
 
 
 
