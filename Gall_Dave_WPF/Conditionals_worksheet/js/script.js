@@ -6,5 +6,6 @@ var degrees = parseInt(prompt("Type in the temperature you would like to convert
 // c = 5/9 * (degrees - 32);//If the temp is in fahrenheit.
 //Create a statement that will display the results of the fahrenheit temperature entered into degrees celsius.
 if(Number(degrees) && "f"){
-    console.log(5/9 * (degrees - 32));
-}
+    console.log("The temperature is "+5/9 * (degrees - 32)+"\xB0 celsius.");//If the input is a number and f then the output will be converted into celsius.
+}else
+    console.log(degrees * 9/5 + 32);//If statement that will convert the celsius to fahrenheit.
