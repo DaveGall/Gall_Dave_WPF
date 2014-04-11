@@ -1,7 +1,7 @@
-/**
- * Created by davegall on 4/10/14.
- */
 
-var age = prompt("Enter your age:", "");
-var isOverSixty = parseInt(age) > 60;
-document.write("Older than 60: " + isOverSixty);
+var degFahren = Number(prompt("Enter the degrees Fahrenheit", " "));
+var degCent;
+
+degCent = 5/9 * (degFahren - 32);
+
+
