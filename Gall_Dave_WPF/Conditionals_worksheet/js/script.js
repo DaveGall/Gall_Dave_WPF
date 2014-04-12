@@ -4,6 +4,9 @@
 var userName = prompt("Please enter your username.");
 //A prompt to retrieve the users password.
 var password = prompt("Please enter your password.");
+//inputting the correct username and password for the computer to check against.
+var name = "Dave Gall";
+var pass = "Princess1";
 
 
 
