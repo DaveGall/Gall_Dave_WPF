@@ -7,25 +7,25 @@ var classScore = prompt("What score did you receive for this class?");
 var grade = classScore+"%";
 //I am creating the if true statements for each possibility.
 if(classScore >= 95 && classScore <= 100) {
-    console.log("You have a " + grade + " which means you have an A+ in the class.");
+    console.log("You have a " + grade + " which means you have an A+ in the class.");//A+ response
 }
 if(classScore >= 90 && classScore <= 94){
-        console.log("You have a "+grade+" which means you have an A in the class.");
+        console.log("You have a "+grade+" which means you have an A in the class.");//A response
 }
 if(classScore >=85 && classScore <= 89){
-    console.log("You have a "+grade+" which means you have a B+ in the class.");
+    console.log("You have a "+grade+" which means you have a B+ in the class.");//B+ response
 }
 if(classScore >= 80 && classScore <= 84){
-    console.log("You have a "+grade+" which means you have a B in the class.");
+    console.log("You have a "+grade+" which means you have a B in the class.");//B response
 }
 if(classScore >= 76 && classScore <= 79){
-    console.log("You have a "+grade+" which means you have a C+ in the class.");
+    console.log("You have a "+grade+" which means you have a C+ in the class.");//C+ response
 }
 if(classScore >= 73 && classScore <= 75){
-    console.log("You have a "+grade+" which means you have an C in the class.");
+    console.log("You have a "+grade+" which means you have an C in the class.");//C response
 }
 if(classScore >= 70 && classScore <= 72){
-    console.log("You have a "+grade+" which means you have an D in the class.");
+    console.log("You have a "+grade+" which means you have an D in the class.");//D response
 }
 
 
