@@ -18,7 +18,12 @@ pressure[1] = rfTire;
 pressure[2] = rrTire;
 //Adding the results of rlTire.
 pressure[3] = rlTire;
-//
+//I will now write my conditional statement to provide the desired results.
+if((pressure[0] === pressure[1]) && (pressure[2] === pressure[3])){
+    console.log("The tires pass spec!");//True statement results
+}else{
+    console.log("Get your tires checked out!");//False statement results.
+}
 
 
 
