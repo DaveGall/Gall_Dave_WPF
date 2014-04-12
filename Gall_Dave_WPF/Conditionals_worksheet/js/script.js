@@ -22,12 +22,14 @@ if(classScore >= 76 && classScore <= 79){
     console.log("You have a "+grade+" which means you have a C+ in the class.");//C+ response
 }
 if(classScore >= 73 && classScore <= 75){
-    console.log("You have a "+grade+" which means you have an C in the class.");//C response
+    console.log("You have a "+grade+" which means you have a C in the class.");//C response
 }
 if(classScore >= 70 && classScore <= 72){
-    console.log("You have a "+grade+" which means you have an D in the class.");//D response
+    console.log("You have a "+grade+" which means you have a D in the class.");//D response
 }
-
+if(classScore >= 0 && classScore <= 69){
+    console.log("You have a "+grade+" which means you have a F in the class.");//F response
+}
 
 
 
