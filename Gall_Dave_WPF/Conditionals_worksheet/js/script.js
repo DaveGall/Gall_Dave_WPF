@@ -11,13 +11,18 @@ if(classScore >= 95 && classScore <= 100) {
 }
 if(classScore >= 90 && classScore <= 94){
         console.log("You have a "+grade+" which means you have an A in the class.");
-
 }
 if(classScore >=85 && classScore <= 89){
-    console.log("You have a "+grade+" which means you have an B+ in the class.");
+    console.log("You have a "+grade+" which means you have a B+ in the class.");
 }
 if(classScore >= 80 && classScore <= 84){
-    console.log("You have a "+grade+" which means you have an B in the class.");
+    console.log("You have a "+grade+" which means you have a B in the class.");
+}
+if(classScore >= 76 && classScore <= 79){
+    console.log("You have a "+grade+" which means you have a C+ in the class.");
+}
+if(classScore >= 73 && classScore <= 75){
+    console.log("You have a "+grade+" which means you have an C in the class.");
 }
 
 
