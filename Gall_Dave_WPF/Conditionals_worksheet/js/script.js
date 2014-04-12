@@ -5,17 +5,17 @@
 var classScore = prompt("What score did you receive for this class?");
 //Calculation to determine the students final score in the class.
 var grade = classScore+"%";
-alert(grade);
+//I am creating the if true statements for each possibility.
+if(classScore >= 95 && classScore <= 100) {
+    console.log("You have a " + grade + " which means you have an A+ in the class.");
+}
+if(classScore >= 90 && classScore <= 94){
+        console.log("You have a "+grade+" which means you have an A in the class.");
 
-
-
-
-
-
-
-
-
-
+}
+if(classScore >=85 && classScore <= 89){
+    console.log("You have a "+grade+" which means you have an B+ in the class.");
+}
 
 
 
