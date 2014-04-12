@@ -1,24 +1,41 @@
 //David Gall, 04/11/14, Conditionals worksheet.
-//Last chance for gas.
+//Grade Letter Calculator.
 
-//user enter the MPG for their car.
-var mpg = prompt("What is your cars miles per gallon?");
-//Have the user enter how much gas they have left.
-var prcntLeft = prompt("What percentage of gas is left in your tank in whole numbers?");
-//Have the user input the size of their gas tank.
-var tankCapacity = prompt("How many gallons of gas does your tank hold?");
-//Calculation for the percentage of gas left in the tank.
-var tankPrcnt = prcntLeft/100;
-//I will calculate the distance the car could travel on the gas left in the tank.
-var distance = tankCapacity * tankPrcnt * mpg;
-//I will now calculate the gallons left in the tank.
-var gallonsLeft = tankCapacity * tankPrcnt;
-//The first part of the if/else statement that will produce the true results.
-if(distance > 200){
-    //The true statement results.
-    console.log("Yes you can make it without stopping for gas!");
-    //Beginning my else/false statement.
-}else{
-    //The false statement.
-    console.log("You only have "+gallonsLeft+" gallons of gas left in your tank, you better get gas!");
-}
+//Ask for user to input their score for the class.
+var classScore = prompt("What score did you receive for this class?");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*A+95-1004.0A90-943.5B+85-893.0B80-842.5C+76-792.0C73-751.5D70-721.0F0-690.0
+GRADUATE
+
+A+95-1004.0A90-943.5B+85-893.0B80-842.5C73-792.0D70-721.0F0-690.0*/
