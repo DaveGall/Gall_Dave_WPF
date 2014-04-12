@@ -16,7 +16,9 @@ if(classScore >= 90 && classScore <= 94){
 if(classScore >=85 && classScore <= 89){
     console.log("You have a "+grade+" which means you have an B+ in the class.");
 }
-
+if(classScore >= 80 && classScore <= 84){
+    console.log("You have a "+grade+" which means you have an B in the class.");
+}
 
 
 
