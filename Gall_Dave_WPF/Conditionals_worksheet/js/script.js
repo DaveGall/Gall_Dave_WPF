@@ -15,6 +15,7 @@ if(userName === name && password === pass){
 }if(!(password === pass)){
     console.log("Password does not match our records.");//If just the password does not match this will be the result.
 }
+//I have tried all the variables and if/true conditions and they all work with the set password and username.
 
 
 
