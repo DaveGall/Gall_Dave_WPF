@@ -17,6 +17,7 @@ var gallonsLeft = tankCapacity * tankPrcnt;
 if(distance > 200){
     //The true statement results.
     console.log("Yes you can make it without stopping for gas!");
+    //Beginning my else/false statement.
 }else{
     console.log()
 }
