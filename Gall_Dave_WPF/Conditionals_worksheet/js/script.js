@@ -2,6 +2,8 @@
 //Check Login problem.
 //A prompt to retrieve the users username.
 var userName = prompt("Please enter your username.");
+var password = prompt("Please enter your password.");
+
 
 
 
