@@ -4,6 +4,8 @@
 //Ask for user to input their score for the class.
 var classScore = prompt("What score did you receive for this class?");
 //Calculation to determine the students final score in the class.
+var grade = classScore+"%";
+alert(grade);
 
 
 
