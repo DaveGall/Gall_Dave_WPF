@@ -14,6 +14,8 @@ var pressure = new Array();//Begins my Array.
 pressure[0] = lfTire;
 //Adding the second for rfTire.
 pressure[1] = rfTire;
+//Adding the results of rrTire.
+pressure[2] = rrTire;
 //
 
 
