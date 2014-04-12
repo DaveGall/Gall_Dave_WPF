@@ -8,10 +8,12 @@ var password = prompt("Please enter your password.");
 var name = "Dave Gall";
 var pass = "Princess1";
 //I am starting my if/else statement to determine if the username and password are correct.
-if(userName === "Dave Gall"){
-    console.log("Welcome "+name+ "!");
-}else{
-    console.log("User not found try again.");
+if(userName === name && password === pass){
+    console.log("Welcome "+name+ "!");//If the complete name and password are true then this will be the result.
+}if(!(userName === name)){
+    console.log("User not found. Try again.");//If just the username is wrong this will be the result.
+}if(!(password === pass)){
+    console.log("Password does not match our records.");//If just the password does not match this will be the result.
 }
 
 
