@@ -13,3 +13,6 @@ var tankPrcnt = prcntLeft/100;
 var distance = tankCapacity * tankPrcnt * mpg;
 //I will now calculate the gallons left in the tank.
 var gallonsLeft = tankCapacity * tankPrcnt;
+if(distance > 200){
+    console.log("Yes you can make it without stopping for gas!");
+}
