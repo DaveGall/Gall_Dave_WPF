@@ -10,6 +10,9 @@ var rrTire = prompt("What is the pressure of your rear passenger tire?");
 var rlTire = prompt("What is the tire pressure of your rear driver side tire?");
 //I am going to add my Array.
 var pressure = new Array();//Begins my Array.
+//Adding the first variable to my list.
+pressure[0] = lfTire;
+//
 
 
 
