@@ -19,5 +19,6 @@ if(distance > 200){
     console.log("Yes you can make it without stopping for gas!");
     //Beginning my else/false statement.
 }else{
+    //The false statement.
     console.log()
 }
