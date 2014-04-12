@@ -28,7 +28,9 @@ if(classScore >= 70 && classScore <= 72){
     console.log("You have a "+grade+" which means you have a D in the class.");//D response
 }
 if(classScore >= 0 && classScore <= 69){
-    console.log("You have a "+grade+" which means you have a F in the class.");//F response
+    console.log("You have a "+grade+" which means you have an F in the class.");//F response
+}else{
+    console.log("Please try again");
 }
 
 
