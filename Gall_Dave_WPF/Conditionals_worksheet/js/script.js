@@ -11,3 +11,5 @@ var tankCapacity = prompt("How many gallons of gas does your tank hold?");
 var tankPrcnt = prcntLeft/100;
 //I will calculate the distance the car could travel on the gas left in the tank.
 var distance = tankCapacity * tankPrcnt * mpg;
+//I will now calculate the gallons left in the tank.
+var gallonsLeft = tankCapacity * tankPrcnt;
