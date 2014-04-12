@@ -16,6 +16,8 @@ pressure[0] = lfTire;
 pressure[1] = rfTire;
 //Adding the results of rrTire.
 pressure[2] = rrTire;
+//Adding the results of rlTire.
+pressure[3] = rlTire;
 //
 
 
