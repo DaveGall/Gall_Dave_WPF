@@ -20,5 +20,5 @@ if(distance > 200){
     //Beginning my else/false statement.
 }else{
     //The false statement.
-    console.log()
+    console.log("You only have "+gallonsLeft+" gallons of gas left in your tank, you better get gas!");
 }
