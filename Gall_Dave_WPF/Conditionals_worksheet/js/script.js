@@ -1,14 +1,14 @@
 //David Gall, 04/11/14, Conditionals worksheet.
-//Movie Ticket Price
-//I will set up a variable of the time the movie starts.
-var movieTime = prompt("What time does the movie start?");
-//I will now set up the variable for the users age.
-var customerAge = prompt("How old are you?");
-//I am creating the if/else statement to get the desired results.
-if(movieTime >= 3 && movieTime <=5 || customerAge >=55 && customerAge <=10){//This if statement accounts for two different variables that will give the same result. 
-    console.log("The ticket price is $7.00.");
-}else{
-    console.log("The ticket price is $12.00.");
+//Fahrenheit to Celsius.
+var degree = prompt("What degree number would you like to convert?");
+var farCel = prompt("Fahrenheit (f) or Celsius (c)?");
+var f = 5/9 * (degree - 32);//calculation for fahrenheit to celsius.
+var c = degree * 9/5 + 32;//calculation for celsius to fahrenheit.
+//if condition for the number and f.
+if(farCel === "f"){
+    console.log("The temperature is "+ f +"\xB0 Celsius.");
+}if(farCel === "c"){
+    console.log("The temperature is "+ c +"\xB0 Fahrenheit.");
 }
 
 
