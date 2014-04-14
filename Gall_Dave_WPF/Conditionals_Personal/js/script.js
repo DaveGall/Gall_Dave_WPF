@@ -7,20 +7,25 @@ var hotel = prompt("How much does the hotel cost per night? \nJust a number plea
 //Find out which mode of transportation they are taking. Driving yes or no.
 var driving = prompt("Are you driving? (y) for yes or (n) for no.");
 //This next series will give the correct response to the answer of the previous question.
-if(driving === "y"){
-    var milesToDrive = prompt("How many miles away is your destination?");
-}if(driving === "n"){
+if(driving === "y" || driving === "Y"){//if the response is yes then do this.
+    var milesToDrive = prompt("How many miles away is your destination?");//Distance that is needed to calculate
+    var priceOfGas = prompt("What is the average price of gas per gallon?");//variable on price of gas per gallon.
+    var milesPerGallon = prompt("What is your cars average miles per gallon?");//Getting information on the cars miles per gallon.
+}if(driving === "n" || driving === "N"){//If the response is no then do this.
     //Find out which mode of transportation they are taking. Flying yes or no.
-    var flying = prompt("Are you flying? (y) for yes or (n) for no.");
-}if(flying === "y"){
-    var numberOfTickets = prompt("How many plane tickets did you buy?");
-    var priceOfEach = prompt("How much was each plane ticket? \nNo need for any symbols just numbers is good.");
-}if(flying === "n"){
+    var flying = prompt("Are you flying? (y) for yes or (n) for no.");//A no from the previous question will land you here.
+}if(flying === "y" || flying === "Y"){//A yes to this question will produce the results below.
+    var numberOfTickets = prompt("How many plane tickets did you buy?");//How many plane tickets they will need.
+    var priceOfEach = prompt("How much was each plane ticket? \nNo need for any symbols just numbers is good.");//The cost of each plane ticket.
+}if(flying === "n" || flying === "N"){//A no response to the previous question will land you here.
     //Find out which mode of transportation they are taking. Train yes or no.
     var train = prompt("Are you traveling by train? (y) for yes or (n) for no.");
-}if(train === "y"){
+}if(train === "y" || train === "Y"){//This is the response if you choose to travel by train.
     var numberOfTrainTickets = prompt("How many train tickets do you need to purchase?");
     var costPerTrainTicket = prompt("How much does each train ticket cost? \nNo need for any symbols just numbers is good.");
+    //The next statement is in case they aren't traveling by train. At this point I have no other options for you sorry.
+}else{
+    alert("Sorry I have no other options for you at this time. Please check back in the future if your plans change.")
 }
 
 
