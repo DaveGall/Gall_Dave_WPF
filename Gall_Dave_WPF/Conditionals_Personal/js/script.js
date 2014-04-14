@@ -104,6 +104,8 @@ if(needARental === "y" || needARental === "Y"){
 }
 if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") && (needARental === "y" || needARental === "Y")){
     alert("Yes");
+}if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") &&(needARental === "n" || needARental === "N")){
+    alert("No");
 }
 
 
