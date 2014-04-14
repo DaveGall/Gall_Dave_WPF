@@ -8,6 +8,7 @@ if(savings === ""){
 }
 //Get the length of the vacation from the user.
 var duration = prompt("How many days is your trip planned for?");
+
 //Tests the duration prompt to make sure there is a response.
 if(duration === ""){
     prompt("Oops you forgot to write in a number. Please try again.");
@@ -30,7 +31,7 @@ if(driving === "y" || driving === "Y"){//if the response is yes then do this.
     if(milesToDrive === ""){
         prompt("Oops you forgot something. Please enter a valid response.");//If no input is made.
     }
-    var priceOfGas = prompt("What is the average price of gas per gallon? \nNo symbols are needed just a umber.");//variable on price of gas per gallon.
+    var priceOfGas = prompt("What is the average price of gas per gallon? \nNo symbols are needed just a number.");//variable on price of gas per gallon.
     if(priceOfGas === ""){
         prompt("Oops you forgot something. Please enter a valid response.");//If no input is made.
     }
@@ -90,8 +91,10 @@ if(driving === "y" || driving === "Y"){//if the response is yes then do this.
             prompt("Oops you forgot something. Please enter a valid response.");//If no input is made.
         }
     }
-    //The next statement is in case they aren't traveling by train. At this point I have no other options for you sorry.
+
 }
+//equation to determine the cost if traveling by car.
+var byCar = milesToDrive / milesPerGallon * priceOfGas;
 
-
+console.log("You have $"+savings+" dollars saved for your trip.\n"+byCar);
 
