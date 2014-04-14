@@ -98,6 +98,14 @@ var byCarGas = milesToDrive / milesPerGallon * priceOfGas;//Cost of gas for the 
 var totalCostDriving = (byCarGas + hotel) * duration;//cost of gas plus hotel multiplied by the number of days of the trip.
 var moneyLeftDriving = savings - totalCostDriving;//savings minus the total cost of the trip.
 //equation if the user chooses to travel by plane.
+var planeTickets = priceOfEach * numberOfTickets;
+if(needARental === "y" || needARental === "Y"){
+    var rentalCarPlane = costOfRental * rentalDays;
+}
+if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") && (needARental === "y" || needARental === "Y")){
+    alert("Yes");
+}
+
 
 //details the results for the user.
 if(driving === "y" || driving === "Y") {
