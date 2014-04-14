@@ -94,7 +94,14 @@ if(driving === "y" || driving === "Y"){//if the response is yes then do this.
 
 }
 //equation to determine the cost if traveling by car.
-var byCar = milesToDrive / milesPerGallon * priceOfGas;
+var byCarGas = milesToDrive / milesPerGallon * priceOfGas;//Cost of gas for the trip.
+var totalCostDriving = (byCarGas + hotel) * duration;//cost of gas plus hotel multiplied by the number of days of the trip.
+var moneyLeftDriving = savings - totalCostDriving;//savings minus the total cost of the trip.
+//equation if the user chooses to travel by plane.
 
-console.log("You have $"+savings+" dollars saved for your trip.\n"+byCar);
-
+//details the results for the user.
+if(driving === "y" || driving === "Y") {
+    console.log("You have $" + savings + " dollars saved for your trip.\nIt will cost $" + parseFloat(byCarGas).toFixed(2) + " in gas to reach your destination.\nHotel plus gas will cost a total of $" + parseFloat(totalCostDriving).toFixed(2) + " dollars for your trip.\nYou would have $" + parseFloat(moneyLeftDriving).toFixed(2) + " dollars left to spend on your vacation!!");
+}if(moneyLeftDriving < savings){
+    console.log("I am sorry you do not have enough money saved up for this vacation. \nYou are $"+parseFloat(moneyLeftDriving).toFixed(2)+" short.");
+}
