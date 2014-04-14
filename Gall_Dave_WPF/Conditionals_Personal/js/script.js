@@ -9,7 +9,7 @@ var driving = prompt("Are you driving? (y) for yes or (n) for no.");
 //This next series will give the correct response to the answer of the previous question.
 if(driving === "y" || driving === "Y"){//if the response is yes then do this.
     var milesToDrive = prompt("How many miles away is your destination?");//Distance that is needed to calculate
-    var priceOfGas = prompt("What is the average price of gas per gallon?");//variable on price of gas per gallon.
+    var priceOfGas = prompt("What is the average price of gas per gallon? \nNo symbols are needed just a umber.");//variable on price of gas per gallon.
     var milesPerGallon = prompt("What is your cars average miles per gallon?");//Getting information on the cars miles per gallon.
 }if(driving === "n" || driving === "N"){//If the response is no then do this.
     //Find out which mode of transportation they are taking. Flying yes or no.
@@ -17,6 +17,11 @@ if(driving === "y" || driving === "Y"){//if the response is yes then do this.
 }if(flying === "y" || flying === "Y"){//A yes to this question will produce the results below.
     var numberOfTickets = prompt("How many plane tickets did you buy?");//How many plane tickets they will need.
     var priceOfEach = prompt("How much was each plane ticket? \nNo need for any symbols just numbers is good.");//The cost of each plane ticket.
+    var needARental = prompt("Will you need a rental car? (y) for yes and (n) for no.");//If a rental car is needed.
+    if(needARental === "y" || needARental === "Y"){//Yes response for a rental car is the code below.
+        var rentalDays = prompt("How many days will you need the rental car?");//Days the rental car is needed.
+        var costOfRental = prompt("How much does the rental car cost per day? \nNo need for signs just a number will work.");//Cost of the rental car per day.
+    }
 }if(flying === "n" || flying === "N"){//A no response to the previous question will land you here.
     //Find out which mode of transportation they are taking. Train yes or no.
     var train = prompt("Are you traveling by train? (y) for yes or (n) for no.");
