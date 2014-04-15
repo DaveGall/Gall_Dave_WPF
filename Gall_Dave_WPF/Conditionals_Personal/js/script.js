@@ -107,6 +107,8 @@ var moneyLeftNoRental = savings - noRentalFlying;//calculates the difference bet
 //These equations will be used for users who choose to take the train.
 var costTrain = numberOfTrainTickets * costPerTrainTicket;//This will give a total of the cost of the train tickets.
 var rentalTrain = daysOfRental * rentalCost;//This will give the cost of the rental car for those who choose to take the train.
+var trainWithRental = costTrain + rentalTrain + (hotel * duration);//The total cost of the train trip with a rental car at the destination.
+var trainNoRental = hotel * duration + costTrain;//The total cost of the trip with no car rental at the destination.
 
 
 
