@@ -102,12 +102,14 @@ var planeTickets = priceOfEach * numberOfTickets;//cost of all the plane tickets
 var rentalCarPlane = costOfRental * rentalDays;//cost of rental car if needed.
 var livingCostPlane = hotel * duration + rentalCarPlane + planeTickets;//total cost of the trip if flying with a rental car.
 var moneyLeftFlying = savings - livingCostPlane;//money left (if any) for the trip.
+var noRentalFlying = hotel * duration + planeTickets;//travel costs without a rental car.
+var moneyLeftNoRental = savings - noRentalFlying;//calculates the difference between the savings and the cost of the trip.
 //This if true statement is if the user chooses to travel by plane with a rental car at their destination.
 if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") && (needARental === "y" || needARental === "Y")){
     console.log("Your plane tickets will cost $"+parseFloat(planeTickets).toFixed(2)+" dollars.\nYour rental will cost a total of $"+parseFloat(rentalCarPlane).toFixed(2)+" dollars.\nYour total cost for the trip will be $"+parseFloat(livingCostPlane).toFixed(2)+" dollars.\nYou have $"+parseFloat(moneyLeftFlying).toFixed(2)+" dollars left to spend on your trip.");
     //This if true statement will be if the user does not require a rental car at their destination.
 }if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") &&(needARental === "n" || needARental === "N")){
-    alert("No");
+    console.log("Your plane tickets will cost $"+parseFloat(planeTickets).toFixed(2)+" dollars.\nThe total cost of your trip will be $"+parseFloat(noRentalFlying).toFixed(2)+" dollars. \nYou will have $"+parseFloat(moneyLeftNoRental).toFixed(2)+" dollars left to spend on your trip.");
 }
 
 
