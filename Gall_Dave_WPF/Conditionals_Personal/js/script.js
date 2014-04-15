@@ -31,7 +31,7 @@ if(driving === "y" || driving === "Y"){//if the response is yes then do this.
     if(milesToDrive === ""){
         prompt("Oops you forgot something. Please enter a valid response.");//If no input is made.
     }
-    var priceOfGas = prompt("What is the average price of gas per gallon? \nNo symbols are needed just a number.");//variable on price of gas per gallon.
+    var priceOfGas = prompt("What is the average price of gas per gallon? \nNo symbols are needed just a number x.xx.");//variable on price of gas per gallon.
     if(priceOfGas === ""){
         prompt("Oops you forgot something. Please enter a valid response.");//If no input is made.
     }
