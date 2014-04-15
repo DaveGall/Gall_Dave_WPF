@@ -104,6 +104,9 @@ var livingCostPlane = (hotel * duration) + (priceOfEach * numberOfTickets) + ren
 var moneyLeftFlying = savings - livingCostPlane;//money left (if any) for the trip.
 var noRentalFlying = hotel * duration + planeTickets;//travel costs without a rental car.
 var moneyLeftNoRental = savings - noRentalFlying;//calculates the difference between the savings and the cost of the trip.
+//These equations will be used for users who choose to take the train.
+var costTrain = numberOfTrainTickets * costPerTrainTicket;//This will give a total of the cost of the train tickets.
+var rentalTrain = daysOfRental * rentalCost;//This will give the cost of the rental car for those who choose to take the train.
 
 
 
