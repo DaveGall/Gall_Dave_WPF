@@ -45,7 +45,7 @@ if(driving === "y" || driving === "Y"){//if the response is yes then do this.
 //Tests the flying prompt for valid input
 }if(flying === ""){
         prompt("Oops you forgot something. Please enter a valid response.");//If no input is made.
-    }else if(flying === "y" || flying === "Y"){//A yes to this question will produce the results below.
+    }if(flying === "y" || flying === "Y"){//A yes to this question will produce the results below.
     var numberOfTickets = prompt("How many plane tickets did you buy?");//How many plane tickets they will need.
     if(numberOfTickets === ""){
         prompt("Oops you forgot something. Please enter a valid response.");//If no input is made.
@@ -100,22 +100,30 @@ var moneyLeftDriving = savings - totalCostDriving;//savings minus the total cost
 //equation if the user chooses to travel by plane.
 var planeTickets = priceOfEach * numberOfTickets;//cost of all the plane tickets.
 var rentalCarPlane = costOfRental * rentalDays;//cost of rental car if needed.
-var livingCostPlane = hotel * duration + rentalCarPlane + planeTickets;//total cost of the trip if flying with a rental car.
+var livingCostPlane = (hotel * duration) + (priceOfEach * numberOfTickets) + rentalCarPlane;//total cost of the trip if flying with a rental car.
 var moneyLeftFlying = savings - livingCostPlane;//money left (if any) for the trip.
 var noRentalFlying = hotel * duration + planeTickets;//travel costs without a rental car.
 var moneyLeftNoRental = savings - noRentalFlying;//calculates the difference between the savings and the cost of the trip.
-//This if true statement is if the user chooses to travel by plane with a rental car at their destination.
-if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") && (needARental === "y" || needARental === "Y")){
-    console.log("Your plane tickets will cost $"+parseFloat(planeTickets).toFixed(2)+" dollars.\nYour rental will cost a total of $"+parseFloat(rentalCarPlane).toFixed(2)+" dollars.\nYour total cost for the trip will be $"+parseFloat(livingCostPlane).toFixed(2)+" dollars.\nYou have $"+parseFloat(moneyLeftFlying).toFixed(2)+" dollars left to spend on your trip.");
-    //This if true statement will be if the user does not require a rental car at their destination.
-}if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") &&(needARental === "n" || needARental === "N")){
-    console.log("Your plane tickets will cost $"+parseFloat(planeTickets).toFixed(2)+" dollars.\nThe total cost of your trip will be $"+parseFloat(noRentalFlying).toFixed(2)+" dollars. \nYou will have $"+parseFloat(moneyLeftNoRental).toFixed(2)+" dollars left to spend on your trip.");
-}
+
 
 
 //details the results for the user.
-if(driving === "y" || driving === "Y") {
-    console.log("You have $" + savings + " dollars saved for your trip.\nIt will cost $" + parseFloat(byCarGas).toFixed(2) + " in gas to reach your destination.\nHotel plus gas will cost a total of $" + parseFloat(totalCostDriving).toFixed(2) + " dollars for your trip.\nYou would have $" + parseFloat(moneyLeftDriving).toFixed(2) + " dollars left to spend on your vacation!!");
-}if(moneyLeftDriving < savings){
-    console.log("I am sorry you do not have enough money saved up for this vacation. \nYou are $"+parseFloat(moneyLeftDriving).toFixed(2)+" short.");
+if((driving === "y" || driving === "Y") && (totalCostDriving < savings)) {
+    console.log("The total cost of your trip will be $"+parseFloat(totalCostDriving).toFixed(2)+" dollars.\nYou will have $"+parseFloat(moneyLeftDriving).toFixed(2)+" dollars left to spend.");
+//}if((driving === "y" || driving === "Y") && (totalCostDriving > savings)){
+}if((driving === "y" || driving === "Y") &&  (totalCostDriving > savings)) {
+    console.log("I am sorry you do not have enough money saved up for this vacation. You will be $"+parseFloat(moneyLeftDriving).toFixed(2)+" dollars short.");
+}
+//This if true statement is if the user chooses to travel by plane with a rental car at their destination and enough money for the trip.
+if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") && (needARental === "y" || needARental === "Y") && (livingCostPlane < savings)){
+    console.log("The total cost of your trip with a rental car will be $"+parseFloat(livingCostPlane).toFixed(2)+" dollars.");
+    //This if true statement will be if the user requires a rental car at their destination but they don't have enough money.
+}if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") && (needARental === "y" || needARental === "Y") && (livingCostPlane > savings)) {
+    console.log("I am sorry you do not have enough money saved up for this vacation.\nYou are $" + parseFloat(moneyLeftFlying).toFixed(2) + " dollars short.");
+    //this statement is if the user does not need a rental car and has enough money saved up for a vacation.
+}if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") && (needARental === "n" || needARental === "N") && (noRentalFlying < savings)) {
+    console.log("The total cost of your trip will be $" + parseFloat(noRentalFlying).toFixed(2) + " dollars. \nYou will have $" + parseFloat(moneyLeftNoRental).toFixed(2) + " dollars left to spend on your trip.");
+//this statement is for a user who does not need a rental and does not have enough money.
+}if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") && (needARental === "n"|| needARental === "N") && (noRentalFlying > savings)){
+    console.log("I am sorry you do not have enough money saved up for this vacation.\nYou are $"+parseFloat(moneyLeftNoRental).toFixed(2)+" dollars short.");
 }
