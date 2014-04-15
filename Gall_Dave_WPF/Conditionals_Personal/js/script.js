@@ -110,7 +110,7 @@ var rentalTrain = daysOfRental * rentalCost;//This will give the cost of the ren
 var trainWithRental = costTrain + rentalTrain + (hotel * duration);//The total cost of the train trip with a rental car at the destination.
 var trainNoRental = hotel * duration + costTrain;//The total cost of the trip with no car rental at the destination.
 var moneyLeftTrainRental = savings - trainWithRental;//Calculates the difference between the savings and the actual cost with a rental.
-
+var noRentalTrainTotal = savings - trainNoRental;//This will calculate the money left after subtracting the savings from the total cost of the trip with no rental.
 
 
 //details the results for the user.
@@ -138,4 +138,10 @@ if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") &&
     //This statement will give the result for those who want to take the train with a rental car but do not have enough money for the trip.
 }if((driving === "n" || driving === "N") && (flying === "n" || flying === "N") && (train === "y" || train === "Y") && (rentalCar === "y" || rentalCar === "Y") && (trainWithRental > savings)){
     console.log("I am sorry but you do not have enough money for your trip. You are $"+parseFloat(moneyLeftTrainRental).toFixed(2)+" dollars short.");
+    //This next statement will give the results of taking the train with no rental and having enough money to pay for the trip.
+}if((driving === "n" || driving === "N") && (flying === "n" || flying === "N") && (train === "y" || train === "Y") && (rentalCar === "n" || rentalCar === "N") && (trainNoRental < savings)){
+    console.log("The total cost of your trip will be $"+parseFloat(trainNoRental).toFixed(2)+" dollars. You will have $"+parseFloat(noRentalTrainTotal).toFixed(2)+" dollars left to spend on your trip.");
+    //This statement will give the results of taking the train with no rental but not having enough money to pay for the trip.
+}if((driving === "n" || driving === "N") && (flying === "n" || flying === "N") && (train === "y" || train === "Y") && (rentalCar === "n" || rentalCar === "N") && (trainNoRental > savings)){
+    console.log("I am sorry you do not have enough money saved for this trip. You are $"+parseFloat(noRentalTrainTotal).toFixed(2)+" dollars short.");
 }
