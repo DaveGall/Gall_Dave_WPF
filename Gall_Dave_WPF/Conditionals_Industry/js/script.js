@@ -10,3 +10,6 @@ var employees = Number(prompt("How many employees do you have to work on the pro
 if(employees === ""){
     prompt("Oops you forgot to input a number.");//If the user doesn't put a value then this message will appear.
 }
+//This calculation will determine the number of employees needed by dividing the total project hours by 8 (the maximum an employee can work on the project.
+var employeesNeeded = projectHours / 8;
+
