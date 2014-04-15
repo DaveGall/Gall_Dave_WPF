@@ -109,6 +109,7 @@ var costTrain = numberOfTrainTickets * costPerTrainTicket;//This will give a tot
 var rentalTrain = daysOfRental * rentalCost;//This will give the cost of the rental car for those who choose to take the train.
 var trainWithRental = costTrain + rentalTrain + (hotel * duration);//The total cost of the train trip with a rental car at the destination.
 var trainNoRental = hotel * duration + costTrain;//The total cost of the trip with no car rental at the destination.
+var moneyLeftTrainRental = savings - trainWithRental;//Calculates the difference between the savings and the actual cost with a rental.
 
 
 
@@ -131,4 +132,10 @@ if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") &&
 //this statement is for a user who does not need a rental and does not have enough money.
 }if((driving === "n" || driving === "N") && (flying === "y" || flying === "Y") && (needARental === "n"|| needARental === "N") && (noRentalFlying > savings)){
     console.log("I am sorry you do not have enough money saved up for this vacation.\nYou are $"+parseFloat(moneyLeftNoRental).toFixed(2)+" dollars short.");
+    //This statement will give the results for those who choose not to drive or fly but go by train with a rental car at the end. Also with enough money to take the trip.
+}if((driving === "n" || driving === "N") && (flying === "n" || flying === "N") && (train === "y" || train === "Y") && (rentalCar === "y" || rentalCar === "Y") && (trainWithRental < savings)){
+    console.log("The total cost of your trip will be $"+parseFloat(trainWithRental).toFixed(2)+" dollars. You will have $"+parseFloat(moneyLeftTrainRental).toFixed(2)+" dollars left to spend.");
+    //This statement will give the result for those who want to take the train with a rental car but do not have enough money for the trip.
+}if((driving === "n" || driving === "N") && (flying === "n" || flying === "N") && (train === "y" || train === "Y") && (rentalCar === "y" || rentalCar === "Y") && (trainWithRental > savings)){
+    console.log("I am sorry but you do not have enough money for your trip. You are $"+parseFloat(moneyLeftTrainRental).toFixed(2)+" dollars short.");
 }
