@@ -12,4 +12,7 @@ if(employees === ""){
 }
 //This calculation will determine the number of employees needed by dividing the total project hours by 8 (the maximum an employee can work on the project.
 var employeesNeeded = projectHours / 8;
+//This calculation will give a result of how many more employees are needed to complete your project with the constraints given.
+var moreEmployees = employeesNeeded - employees;
+
 
