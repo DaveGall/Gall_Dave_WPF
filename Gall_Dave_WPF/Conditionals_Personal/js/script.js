@@ -92,7 +92,10 @@ if(driving === "y" || driving === "Y"){//if the response is yes then do this.
         }
     }
 
+}if(train === "n" || train === "N"){
+    console.log("I am sorry I can not help you at this time. Please check back at a later date.");//A prompt for those who just choose to select no throughout the prompts.
 }
+//All calculations for the code are placed here.
 //equation to determine the cost if traveling by car.
 var byCarGas = milesToDrive / milesPerGallon * priceOfGas;//Cost of gas for the trip.
 var totalCostDriving = (byCarGas + hotel) * duration;//cost of gas plus hotel multiplied by the number of days of the trip.
