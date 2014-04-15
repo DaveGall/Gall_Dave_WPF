@@ -18,6 +18,9 @@ var moreEmployees = employeesNeeded - employees;
 var hoursWorked = projectHours / employees;
 //Start of the if true statement which will be displayed if the you have enough employees to cover the project.
 if(employees > employeesNeeded){
-    console.log("You will have enough employees for your project. Your employees will work "+hoursWorked+" hours each on this project.");
+    console.log("You will have enough employees for your project. Your employees will work approximately "+parseFloat(hoursWorked).toFixed(2)+" hours each on this project.");
+    //This next statement is is for if the first one is not true then this is the next calculation the computer needs to look at and display.
+}else if(employees < employeesNeeded){
+    console.log("I am sorry but you do not have enough employees to complete this project under the current guidelines. You will need approximately "+parseInt(moreEmployees)+" more employee(s) to complete this project.");
 }
 
