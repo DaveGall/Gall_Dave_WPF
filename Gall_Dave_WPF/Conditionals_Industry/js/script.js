@@ -14,5 +14,10 @@ if(employees === ""){
 var employeesNeeded = projectHours / 8;
 //This calculation will give a result of how many more employees are needed to complete your project with the constraints given.
 var moreEmployees = employeesNeeded - employees;
-
+//This calculation will give the number of hours each employee will work. Only for the true statement of having enough employees.
+var hoursWorked = projectHours / employees;
+//Start of the if true statement which will be displayed if the you have enough employees to cover the project.
+if(employees > employeesNeeded){
+    console.log("You will have enough employees for your project. Your employees will work "+hoursWorked+" hours each on this project.");
+}
 
