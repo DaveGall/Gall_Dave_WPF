@@ -18,4 +18,10 @@ if((dayOfWeek === "monday" || dayOfWeek === "Monday") && (timeOfDay === "am" || 
     //This is the section that will display when the user chooses monday or Monday and PM or pm.
 }if((dayOfWeek === "monday" || dayOfWeek === "Monday") && (timeOfDay === "pm" || timeOfDay ==="PM")){
     alert("It's Monday PM");
+}//This next section will display if the user chooses tuesday or Tuesday and am or AM.
+if((dayOfWeek === "tuesday" || dayOfWeek === "Tuesday") && (timeOfDay === "am" || timeOfDay === "AM")){
+    alert("It's Tuesday AM");
+}//This next section will display if the user chooses tuesday Tuesday and pm or PM.
+if((dayOfWeek === "tuesday" || dayOfWeek === "Tuesday") && (timeOfDay === "pm" || timeOfDay === "PM")){
+    alert("It's Tuesday PM");
 }
