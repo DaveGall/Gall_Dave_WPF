@@ -1,46 +1,47 @@
 //GoTo Training session.
-//Figure out how old we currently are and how old we will be
-//in a given amount of years.
+//Check how many pears are in a bowl of fruit.
 
-//Prompt user for name.
+//Create a variable to represent our bowl of fruit.
 
-var name = prompt("Please type in your name.");
+var bowlOfFruit = ["apple", "banana", "pear", "peach", "pear", "apple", "apple", "pear", "apple", "tomato", "cherry", "orange", "kiwi"];
+//Create a variable that holds the number of pears.
+var totalNumPears = 0;
+var totalNumOtherFruit = 0;
+console.log(bowlOfFruit);
+console.log(bowlOfFruit[2]);
 
-console.log(name);
+//For loop
+//Basic structure of a for loop
+//for(declare a variable used for counting; condition to test; what happens after the loop){ code inside of here}
 
-//Create an alert that the user will see.
-alert("Welcome " +name+"! We have one more question for you.");
+//Test each item in the array by using this for loop
 
-//Get the users birth year.
-var yearBorn = prompt("What year were you born?");
+//Test using a property of the array
+//.length - gives us the number of items inside of the array
 
-console.log(yearBorn);
+for(var i=0; i<bowlOfFruit.length; i++){
+    console.log("inside for loop");
 
-//Variable for current year
+    console.log(bowlOfFruit[i]);
 
-var currentYear = 2014;
-//Figure out how old the user is.
-//Create a variable to hold this answer.
+    //Test each item in the array and see if it is a pear
 
-var age = currentYear - yearBorn;
+    //if statement
+    //if(thing to test){code to run if true}
 
-console.log(age);
+    if(bowlOfFruit[i] === "pear"){
+//If item is a pear this will run
+        console.log("item is a pear");
+        //count the number of pears
+        totalNumPears++;
+//If item is not a pear this will run
+    } else {
+        totalNumOtherFruit++
 
-//Alert the user on how old they are.
-alert(name+" you are "+age+" years old");
+    }
+}
 
-//Lets make it more complex!!
-//Ask the user for a future time.
-var yearsMore = prompt("How many years in the future do you want to check?");
-
-console.log(yearsMore);
-
-//Calculate our future age.
-
-var futureAge = age + Number(yearsMore);
-
-console.log(futureAge);
-
-console.log(name+" you are currently "+age+" in "+yearsMore+" years you will be "+futureAge+".");
-
-alert(name+" you are currently "+age+" in "+yearsMore+" years you will be "+futureAge+".");
+console.log("After the for loop");
+console.log(totalNumPears);
+console.log(totalNumOtherFruit);
+console.log("There are "+totalNumPears+" pear(s) in the fruit bowl and "+totalNumOtherFruit+" other fruit(s) in the bowl.");
