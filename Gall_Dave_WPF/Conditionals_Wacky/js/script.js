@@ -14,13 +14,13 @@ if(timeOfDay === ""){
 }
 //This next section will be if the user chooses monday or Monday and am or AM.
 if((dayOfWeek === "monday" || dayOfWeek === "Monday") && (timeOfDay === "am" || timeOfDay === "AM")){
-    alert("It's Monday AM");
+    console.log("Since it is Monday morning just go back to sleep.");
     //This is the section that will display when the user chooses monday or Monday and PM or pm.
 }if((dayOfWeek === "monday" || dayOfWeek === "Monday") && (timeOfDay === "pm" || timeOfDay ==="PM")){
-    alert("It's Monday PM");
+    console.log("Let's get this Monday afternoon off to a good start with a walk.");
 }//This next section will display if the user chooses tuesday or Tuesday and am or AM.
 if((dayOfWeek === "tuesday" || dayOfWeek === "Tuesday") && (timeOfDay === "am" || timeOfDay === "AM")){
-    alert("It's Tuesday AM");
+    console.log("Head out for another walk on this fine Tuesday morning.");
 }//This next section will display if the user chooses tuesday Tuesday and pm or PM.
 if((dayOfWeek === "tuesday" || dayOfWeek === "Tuesday") && (timeOfDay === "pm" || timeOfDay === "PM")){
     alert("It's Tuesday PM");
@@ -38,10 +38,10 @@ if((dayOfWeek === "thursday" || dayOfWeek === "Thursday") && (timeOfDay === "pm"
     alert("It's Thursday PM");
 }//This next line of code will be for if the user decides on friday or Friday and am or AM.
 if((dayOfWeek === "friday" || dayOfWeek === "Friday") && (timeOfDay === "am" || timeOfDay === "AM")){
-    alert("It's Friday AM");
+    console.log("Friday morning is a great time to head to the river for a little R & R.");
 }//This next line of code is for if the user chooses friday or Friday and pm or PM.
 if((dayOfWeek === "friday" || dayOfWeek === "Friday") && (timeOfDay === "pm" || timeOfDay === "PM")){
-    alert("It's Friday PM");
+    console.log("Well it's Friday night, which is movie night.");
 }//This next set of code will be displayed if the user chooses saturday or Saturday and am or AM.
 if((dayOfWeek === "saturday" || dayOfWeek === "Saturday") && (timeOfDay === "am" || timeOfDay === "AM")){
     alert("It's Saturday AM");
