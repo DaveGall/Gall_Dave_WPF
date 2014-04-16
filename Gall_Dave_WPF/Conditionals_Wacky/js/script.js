@@ -23,13 +23,13 @@ if((dayOfWeek === "tuesday" || dayOfWeek === "Tuesday") && (timeOfDay === "am" |
     console.log("Head out for another walk on this fine Tuesday morning.");
 }//This next section will display if the user chooses tuesday Tuesday and pm or PM.
 if((dayOfWeek === "tuesday" || dayOfWeek === "Tuesday") && (timeOfDay === "pm" || timeOfDay === "PM")){
-    alert("It's Tuesday PM");
+    console.log("It's Tuesday afternoon, time for a BBQ!!");
 }//This next section is the true if statement for if the user chooses wednesday or Wednesday and am or AM.
 if((dayOfWeek === "wednesday" || dayOfWeek === "Wednesday") && (timeOfDay === "am" || timeOfDay === "AM")){
-    alert("It's Wednesday AM");
+    console.log("Get over those hump day blues and buy yourself something nice this fine Wednesday morning.");
 }//This next section is the true if statement for if the user chooses wednesday or Wednesday and pm or PM.
 if((dayOfWeek === "wednesday" || dayOfWeek === "Wednesday") && (timeOfDay === "pm" || timeOfDay === "PM")){
-    alert("It's Wednesday PM");
+    console.log("Hump day is the perfect day for pizza night!!");
 }//This next section is for the user who chooses thursday or Thursday and am or AM.
 if((dayOfWeek === "thursday" || dayOfWeek === "Thursday") && (timeOfDay === "am" || timeOfDay === "AM")){
     alert("It's Thursday AM");
