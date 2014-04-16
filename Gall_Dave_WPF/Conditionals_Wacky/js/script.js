@@ -32,10 +32,10 @@ if((dayOfWeek === "wednesday" || dayOfWeek === "Wednesday") && (timeOfDay === "p
     console.log("Hump day is the perfect day for pizza night!!");
 }//This next section is for the user who chooses thursday or Thursday and am or AM.
 if((dayOfWeek === "thursday" || dayOfWeek === "Thursday") && (timeOfDay === "am" || timeOfDay === "AM")){
-    alert("It's Thursday AM");
+    console.log("Thursday morning is the perfect time for some Family Guy on DVD.");
 }//This next line of code will display if the user chooses thursday or Thursday and pm or PM.
 if((dayOfWeek === "thursday" || dayOfWeek === "Thursday") && (timeOfDay === "pm" || timeOfDay === "PM")){
-    alert("It's Thursday PM");
+    console.log("Thursday afternoon is wing day. Wings will make you feel like it's Friday.");
 }//This next line of code will be for if the user decides on friday or Friday and am or AM.
 if((dayOfWeek === "friday" || dayOfWeek === "Friday") && (timeOfDay === "am" || timeOfDay === "AM")){
     console.log("Friday morning is a great time to head to the river for a little R & R.");
