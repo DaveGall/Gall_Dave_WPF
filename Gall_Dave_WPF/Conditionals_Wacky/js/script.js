@@ -36,4 +36,22 @@ if((dayOfWeek === "thursday" || dayOfWeek === "Thursday") && (timeOfDay === "am"
 }//This next line of code will display if the user chooses thursday or Thursday and pm or PM.
 if((dayOfWeek === "thursday" || dayOfWeek === "Thursday") && (timeOfDay === "pm" || timeOfDay === "PM")){
     alert("It's Thursday PM");
+}//This next line of code will be for if the user decides on friday or Friday and am or AM.
+if((dayOfWeek === "friday" || dayOfWeek === "Friday") && (timeOfDay === "am" || timeOfDay === "AM")){
+    alert("It's Friday AM");
+}//This next line of code is for if the user chooses friday or Friday and pm or PM.
+if((dayOfWeek === "friday" || dayOfWeek === "Friday") && (timeOfDay === "pm" || timeOfDay === "PM")){
+    alert("It's Friday PM");
+}//This next set of code will be displayed if the user chooses saturday or Saturday and am or AM.
+if((dayOfWeek === "saturday" || dayOfWeek === "Saturday") && (timeOfDay === "am" || timeOfDay === "AM")){
+    alert("It's Saturday AM");
+}//This next line of code will be for those users who choose saturday or Saturday and pm or PM.
+if((dayOfWeek === "saturday" || dayOfWeek === "Saturday") && (timeOfDay === "pm" || timeOfDay === "PM"){
+    alert("It's Saturday PM");
+}//This next line of code will determine the results for the users who choose sunday or Sunday and am or AM.
+if((dayOfWeek === "sunday" || dayOfWeek === "Sunday") && (timeOfDay === "am" || timeOfDay === "AM")){
+    alert("It's Sunday AM");
+}//This next line of code will display the results if the user chooses sunday or Sunday and pm or PM.
+if((dayOfWeek === "sunday" || dayOfWeek === "Sunday") && (timeOfDay === "pm" || timeOfDay === "PM")){
+    alert("It's Sunday PM");
 }
