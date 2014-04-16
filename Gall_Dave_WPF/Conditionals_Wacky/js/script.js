@@ -46,7 +46,7 @@ if((dayOfWeek === "friday" || dayOfWeek === "Friday") && (timeOfDay === "pm" || 
 if((dayOfWeek === "saturday" || dayOfWeek === "Saturday") && (timeOfDay === "am" || timeOfDay === "AM")){
     alert("It's Saturday AM");
 }//This next line of code will be for those users who choose saturday or Saturday and pm or PM.
-if((dayOfWeek === "saturday" || dayOfWeek === "Saturday") && (timeOfDay === "pm" || timeOfDay === "PM"){
+if((dayOfWeek === "saturday" || dayOfWeek === "Saturday") && (timeOfDay === "pm" || timeOfDay === "PM")){
     alert("It's Saturday PM");
 }//This next line of code will determine the results for the users who choose sunday or Sunday and am or AM.
 if((dayOfWeek === "sunday" || dayOfWeek === "Sunday") && (timeOfDay === "am" || timeOfDay === "AM")){
