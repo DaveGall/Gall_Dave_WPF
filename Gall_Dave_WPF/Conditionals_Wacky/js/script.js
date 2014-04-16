@@ -44,14 +44,14 @@ if((dayOfWeek === "friday" || dayOfWeek === "Friday") && (timeOfDay === "pm" || 
     console.log("Well it's Friday night, which is movie night.");
 }//This next set of code will be displayed if the user chooses saturday or Saturday and am or AM.
 if((dayOfWeek === "saturday" || dayOfWeek === "Saturday") && (timeOfDay === "am" || timeOfDay === "AM")){
-    alert("It's Saturday AM");
+    console.log("It's Saturday morning, time to head up to take a hike in the hills today.");
 }//This next line of code will be for those users who choose saturday or Saturday and pm or PM.
 if((dayOfWeek === "saturday" || dayOfWeek === "Saturday") && (timeOfDay === "pm" || timeOfDay === "PM")){
-    alert("It's Saturday PM");
+    console.log("It's still Saturday and hopefully you are still out hiking from this morning.");
 }//This next line of code will determine the results for the users who choose sunday or Sunday and am or AM.
 if((dayOfWeek === "sunday" || dayOfWeek === "Sunday") && (timeOfDay === "am" || timeOfDay === "AM")){
-    alert("It's Sunday AM");
+    console.log("Sunday morning and time to stop by the local donut shop for coffee and donuts.");
 }//This next line of code will display the results if the user chooses sunday or Sunday and pm or PM.
 if((dayOfWeek === "sunday" || dayOfWeek === "Sunday") && (timeOfDay === "pm" || timeOfDay === "PM")){
-    alert("It's Sunday PM");
+    console.log("Sunday evening, time for cake!! You made it through the week good job!!");
 }
