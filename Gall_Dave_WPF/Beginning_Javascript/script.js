@@ -1,30 +1,21 @@
-//ch3_example3
-var secretNumber = prompt("Pick a number between 1 and 5;", "");
-secretNumber = parseInt(secretNumber);
+//ch3_example4
 
-switch (secretNumber)
-{
-    case 1:
-        document.write("Too Low!");
+var degFahren = new Array(212, "string data", -459.15);
+var degCent = new Array();
+var loopCounter;
+
+for (loopCounter = 0; loopCounter <= 2; loopCounter++) {
+
+    if (isNaN(degFahren[loopCounter])) {
+        alert("Data '" + degFahren[loopCounter] + "' at array index " + loopCounter + " is invalid.");
         break;
-    case 2:
-        document.write("Too Low!");
-        break;
-    case 3:
-        document.write("You guessed the secret number!");
-        break;
-    case 4:
-        document.write("Too High!");
-        break;
-    case 5:
-        document.write("Too High!");
-        break;
-    default:
-        document.write("You did not enter a number between 1 and 5.");
-        break;
+    }
 }
-
-document.write("<br /> Execution continues here.");
+    degCent[loopCounter] = 5/9 * (degFahren[loopCounter] - 32);
+for (loopCounter = 2; loopCounter >= 0; loopCounter--){
+    document.write("Value "+loopCounter+" was "+degFahren[loopCounter]+" degrees Fahrenheit");
+    document.write(" which is "+degCent[loopCounter]+" degrees centigrade<br/>");
+}
 
 
 
