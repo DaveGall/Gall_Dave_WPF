@@ -8,7 +8,7 @@ for (loopCounter = 0; loopCounter <= 2; loopCounter++) {
 
     if (isNaN(degFahren[loopCounter])) {
         alert("Data '" + degFahren[loopCounter] + "' at array index " + loopCounter + " is invalid.");
-        break;
+        continue;
     }
 }
     degCent[loopCounter] = 5/9 * (degFahren[loopCounter] - 32);
