@@ -22,5 +22,7 @@ if(employees > employeesNeeded){
     //This next statement is is for if the first one is not true then this is the next calculation the computer needs to look at and display.
 }else if(employees < employeesNeeded){
     console.log("I am sorry but you do not have enough employees to complete this project under the current guidelines. You will need approximately "+parseInt(moreEmployees)+" more employee(s) to complete this project.");
+}else{
+    console.log("You have the exact amount of employees you will need to complete your project.");
 }
 
