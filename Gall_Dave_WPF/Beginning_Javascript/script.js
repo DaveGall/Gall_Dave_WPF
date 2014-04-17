@@ -24,7 +24,7 @@ switch (secretNumber)
         break;
 }
 
-document.write("\nExecution continues here.");
+document.write("<br /> Execution continues here.");
 
 
 
