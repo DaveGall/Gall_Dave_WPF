@@ -2,10 +2,11 @@
 
 function dogYears(age){//parameters
     var dogYears = age * 7;
-    console.log("Sparky is "+dogYears+" years old.");
+    console.log("Sparky is "+dogYears+" years old in dog years.");
 }
-dogYears(4);//arguments
-dogYears(6);
+var dogAge = prompt("How old is your dog in human years?");
+dogYears(dogAge);//arguments
+
 
 
 
