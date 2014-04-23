@@ -1,11 +1,12 @@
 // Functions - Parameters and Arguments
 
-function dogYears(age){//parameters
-    var dogYears = age * 7;
-    console.log("Sparky is "+dogYears+" years old in dog years.");
+function calcArea(w, h){//parameters
+    var area = w * h;
+    console.log("The area of your rectangle is "+area+" square feet.");
 }
-var dogAge = prompt("How old is your dog in human years?");
-dogYears(dogAge);//arguments
+var width = prompt("What is the width of your rectangle?");
+var height = prompt("What is the height of your rectangle?");
+calcArea(width, height);//arguments
 
 
 
