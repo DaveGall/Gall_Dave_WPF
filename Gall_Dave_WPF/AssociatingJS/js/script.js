@@ -1,13 +1,15 @@
-// Conditional logic - Ternary Operators.
+// Functions - Function Execution
 
-var age = 8;
-var book;
+function outptMsg(){
+    console.log("Hello World!!");
+}
 
-//If the child is under 10 they get green eggs and ham otherwise they get time machine.
-
-book = (age < 10) ? "Green Eggs and Ham" : "The Time Machine";
-console.log(book);
-
+function calcArea(){
+    var width = 20;
+    var height = 30;
+    var area = width * height;
+    console.log(area);
+}
 
 
 
