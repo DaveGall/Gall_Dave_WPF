@@ -1,19 +1,14 @@
-// Functions - Function Execution
+// Functions - Parameters and Arguments
 
-function outptMsg(){
-    console.log("Hello World!!");
+function dogYears(age){//parameters
+    var dogYears = age * 7;
+    console.log("Sparky is "+dogYears+" years old.");
 }
-//Function definition.
-function calcArea(){
-    var width = 20;
-    var height = 30;
-    var area = width * height;
-    console.log(area);
-}
-//Function call.
-calcArea();
-calcArea();
-calcArea();
+dogYears(4);//arguments
+dogYears(6);
+
+
+
 
 
 
