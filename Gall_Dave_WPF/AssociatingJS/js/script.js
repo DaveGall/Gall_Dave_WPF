@@ -1,13 +1,11 @@
-// Functions - Parameters and Arguments
+// Functions - Returning Values
 
-function calcArea(w, h){//parameters
+calcArea(30, 20);
+
+function calcArea(w, h){
     var area = w * h;
-    console.log("The area of your rectangle is "+area+" square feet.");
+    console.log(area);
 }
-var width = prompt("What is the width of your rectangle?");
-var height = prompt("What is the height of your rectangle?");
-calcArea(width, height);//arguments
-
 
 
 
