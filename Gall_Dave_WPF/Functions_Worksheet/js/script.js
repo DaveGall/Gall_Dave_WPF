@@ -14,4 +14,14 @@ function calcCircumference(){//The beginning of my function.
     console.log("The circumference of your circle is "+parseFloat(circumference).toFixed(2)+".");//This will be the return value and statement of the equation for the circumference of the circle and will display it for the user and instructor to see.
 }
 
-calcCircumference();//This will call or invoke the function so that it will run and give the desired results.
+console.log(calcCircumference());//This will call or invoke the function so that it will run and give the desired results.
+
+//Two different ways to do the same problem and I am not sure which one is better but I would think the first one would be better since it would be less to invoke later on in the code when you need to use it again.
+function circleCircumference(radius){
+    var pie = Math.PI;
+    var circumference = 2 * pie * radius;
+    console.log("The circumference of your circle is "+parseFloat(circumference).toFixed(2)+".");
+
+}
+circleCircumference(prompt("What is the radius of your circle?"));
+
