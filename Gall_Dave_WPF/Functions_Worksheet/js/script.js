@@ -10,7 +10,8 @@ function calcCircumference(){//The beginning of my function.
         prompt("I think you forgot to enter a value!");
     }//Just in case the user does not enter a value for the radius.
     var circumference = 2 * pie * radius;//This is the equation to get a value for the circumference of the circle.
-    alert("The circumference of your circle is "+parseFloat(calcCircumference).toFixed(2)+".");
-    console.log("The circumference of your circle is "+parseFloat(calcCircumference).toFixed(2)+".");//This will be the return value and statement of the equation for the circumference of the circle and will display it for the user and instructor to see.
+    alert("The circumference of your circle is "+parseFloat(circumference).toFixed(2)+".");
+    console.log("The circumference of your circle is "+parseFloat(circumference).toFixed(2)+".");//This will be the return value and statement of the equation for the circumference of the circle and will display it for the user and instructor to see.
 }
 
+calcCircumference();//This will call or invoke the function so that it will run and give the desired results.
