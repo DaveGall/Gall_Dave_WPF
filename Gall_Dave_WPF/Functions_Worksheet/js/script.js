@@ -9,8 +9,8 @@ function circleCircumference(radius){//my function parameters
     return circumference;//The return value that will be displayed when needed.
 }
 
-var yourRadius = Number(prompt("What is the radius of your circle?"));
-console.log("The circumference of your circle is "+parseFloat(circleCircumference(yourRadius)).toFixed(2)+".");
+var yourRadius = Number(prompt("What is the radius of your circle?"));//This variable prompt will retrieve the information on the radius of the circle to input into my function.
+console.log("The circumference of your circle is "+parseFloat(circleCircumference(yourRadius)).toFixed(2)+".");//This is the display concatenation that will be put out to let the user know the information that they are looking for.
 
 //David Gall, 04/25/2014, Stung!!, This is the bee problem on the functions worksheet.
 //It takes 8.666666667 stings from bees per pound to kill an animal. For this problem I am going to round to 8.67. We will need the victims weight in pounds and the return will be the number of stings that will end up killing the unfortunate animal.
