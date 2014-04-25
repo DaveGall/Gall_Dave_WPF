@@ -27,3 +27,8 @@ circleCircumference(prompt("What is the radius of your circle?"));
 
 //David Gall, 04/25/2014, Stung!!, This is the bee problem on the functions worksheet.
 //It takes 8.666666667 stings from bees per pound to kill an animal. For this problem I am going to round to 8.67. We will need the victims weight in pounds and the return will be the number of stings that will end up killing the unfortunate animal.
+
+function animalDeath(){
+    var stingsPerPound = 8.67;//Establish a constant for the equation we are creating.
+    var animalWeight = Number(prompt("How many pounds does the animal way?"));//The variable of the weight of the animal which will change so I have used a prompt command to get the information from the user.
+}
