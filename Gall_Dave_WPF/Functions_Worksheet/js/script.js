@@ -10,6 +10,7 @@ function circleCircumference(radius){//my function parameters
 }
 
 var yourRadius = Number(prompt("What is the radius of your circle?"));//This variable prompt will retrieve the information on the radius of the circle to input into my function.
+alert("The circumference of your circle is "+parseFloat(circleCircumference(yourRadius)).toFixed(2)+".");
 console.log("The circumference of your circle is "+parseFloat(circleCircumference(yourRadius)).toFixed(2)+".");//This is the display concatenation that will be put out to let the user know the information that they are looking for.
 
 //David Gall, 04/25/2014, Stung!!, This is the bee problem on the functions worksheet.
