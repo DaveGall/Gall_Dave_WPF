@@ -22,5 +22,5 @@ function animalDeath(animalWeight){
 }
 
 var animalWeight = Number(prompt("How many pounds does the animal way?"));//The variable of the weight of the animal which will change so I have used a prompt command to get the information from the user.
-console.log("It takes "+parseFloat(animalDeath(animalWeight)).toFixed(2)+" bee stings to kill this animal.");
+console.log("It takes "+parseFloat(animalDeath(animalWeight)).toFixed(2)+" bee stings to kill this animal.");//This is the printed statement that will print out to the console for viewing.
 
