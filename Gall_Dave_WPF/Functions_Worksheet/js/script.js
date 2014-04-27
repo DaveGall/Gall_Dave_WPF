@@ -9,8 +9,8 @@ function circleCircumference(radius){//my function parameters
     return circumference;//The return value that will be displayed when needed.
 }
 
-/*var yourRadius = Number(prompt("What is the radius of your circle?"));//This variable prompt will retrieve the information on the radius of the circle to input into my function.
-console.log("The circumference of your circle is "+parseFloat(circleCircumference(yourRadius)).toFixed(2)+".");//This is the display concatenation that will be put out to let the user know the information that they are looking for.*/
+var yourRadius = Number(prompt("What is the radius of your circle?"));//This variable prompt will retrieve the information on the radius of the circle to input into my function.
+console.log("The circumference of your circle is "+parseFloat(circleCircumference(yourRadius)).toFixed(2)+".");//This is the display concatenation that will be put out to let the user know the information that they are looking for.
 
 //David Gall, 04/25/2014, Stung!!, This is the bee problem on the functions worksheet.
 //It takes 8.666666667 stings from bees per pound to kill an animal. For this problem I am going to round to 8.67. We will need the victims weight in pounds and the return will be the number of stings that will end up killing the unfortunate animal.
@@ -18,9 +18,9 @@ console.log("The circumference of your circle is "+parseFloat(circleCircumferenc
 function animalDeath(animalWeight){
     var stingsPerPound = 8.67;//Establish a constant for the equation we are creating.
     var numberOfStings = animalWeight * stingsPerPound;
-    return numberOfStings;
+    return numberOfStings;//The return value of my equation.
 }
 
 var animalWeight = Number(prompt("How many pounds does the animal way?"));//The variable of the weight of the animal which will change so I have used a prompt command to get the information from the user.
 console.log("It takes "+parseFloat(animalDeath(animalWeight)).toFixed(2)+" bee stings to kill this animal.");
-//animalDeath();
+
