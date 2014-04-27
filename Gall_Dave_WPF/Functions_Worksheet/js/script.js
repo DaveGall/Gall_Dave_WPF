@@ -17,7 +17,7 @@ console.log("The circumference of your circle is "+parseFloat(circleCircumferenc
 
 function animalDeath(animalWeight){//My function parameter.
     var stingsPerPound = 8.67;//Establish a constant for the equation we are creating.
-    var numberOfStings = animalWeight * stingsPerPound;
+    var numberOfStings = animalWeight * stingsPerPound;//Equation for determining the amount of stings that will kill an animal according to its weight.
     return numberOfStings;//The return value of my equation.
 }
 
