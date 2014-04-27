@@ -15,7 +15,7 @@ console.log("The circumference of your circle is "+parseFloat(circleCircumferenc
 //David Gall, 04/25/2014, Stung!!, This is the bee problem on the functions worksheet.
 //It takes 8.666666667 stings from bees per pound to kill an animal. For this problem I am going to round to 8.67. We will need the victims weight in pounds and the return will be the number of stings that will end up killing the unfortunate animal.
 
-function animalDeath(animalWeight){
+function animalDeath(animalWeight){//My function parameter.
     var stingsPerPound = 8.67;//Establish a constant for the equation we are creating.
     var numberOfStings = animalWeight * stingsPerPound;
     return numberOfStings;//The return value of my equation.
