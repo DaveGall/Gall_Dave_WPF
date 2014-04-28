@@ -68,6 +68,11 @@ if((doYouFloss === "y" || doYouFloss === "Y") && (rinse === "y" || rinse === "Y"
 }if((doYouFloss === "y" || doYouFloss === "Y") && (rinse === "n" || rinse === "N")){
     alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth, " + beforeTime(age, timesFloss, timeFloss) + " minutes flossing your teeth so far. \nAt your current rate of hygiene you will brush approximately another " + afterAge(age, brushTeeth, lengthBrushing) + " minutes and floss another " + afterAge(age, timesFloss, timeFloss) + " minutes in your life.");
 }
-
+//This next statement will be displayed if the user chooses rinsing as yes and flossing as no.
+if((doYouFloss === "n" || doYouFloss === "N") && (rinse === "y" || rinse === "Y")){
+    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth and "+beforeTime(age, manyRinse, rinseTime) + " minutes rinsing so far. \nAt your current rate of hygiene you will brush approximately another " + afterAge(age, brushTeeth, lengthBrushing)+" minutes and rinse another "+afterAge(age, manyRinse, rinseTime) + " minutes in your life.");
+}else{//This will be displayed if the user just brushes their teeth.
+    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth so far in your life. \nAt your current rate of hygiene you will spend approximately "+afterAge(age, brushTeeth, lengthBrushing)+" minutes more brushing your teeth.");
+}
 
 
