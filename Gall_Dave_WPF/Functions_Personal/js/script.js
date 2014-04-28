@@ -9,10 +9,14 @@ Approximately how many minutes does it take you to floss?
 How many times per day do you rinse?
 No need for a prompt for amount of time that takes as we will average it to 1 minute per rinse.
 -?How old are you?-
+times brushing * length brushing = length brushing a day
+times flossing * time flossing = length flossing a day
+many rinse would just equal itself since we are averaging 1 minute per rinse.
+
  */
 
 alert("This little task will determine how long you spend keeping your teeth and your dentist happy each year and throughout your life.");//This is an alert that will let the user know the purpose of the task they are completing.
-var age = Number(prompt("How old are you? Please use numbers."));
+var age = Number(prompt("How old are you? Please use numbers."));//User input for their age to use for determining how long they have been spending on hygiene.
 var brushTeeth = Number(prompt("How many times do you brush your teeth every day?"));//First prompt asking for how many times the user brushes their teeth each day.
 var lengthBrushing = Number(prompt("Approximately how many minutes do you spend brushing your teeth each time?"));//This is a prompt to get the amount of time the user brushes their teeth each time they brush.
 var doYouFloss = prompt("Do you floss your teeth? Y or N");//Asking the user if they floss during the day.
@@ -33,7 +37,7 @@ if(doYouFloss === "y" || doYouFloss ==="Y"){//If the answer to do you floss is y
     var rinse = prompt("Do you rinse with mouthwash? Y or N");//User response to find out if they rinse or not.
     if(rinse === "y" || rinse === "Y") {//This is the code that will run if the user selects yes
         var manyRinse = Number(prompt("How many times do you rinse each day?"));//Collect how many times the user flosses a day.
-        
+
         console.log("Yes rinse print out.");//Print if the response is yes to rinsing.
     }else{
         console.log("No rinse print out.");//Print if response to rinse is no.
