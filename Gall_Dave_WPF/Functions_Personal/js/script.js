@@ -13,6 +13,8 @@ times brushing * length brushing = length brushing a day
 times flossing * time flossing = length flossing a day
 many rinse would just equal itself since we are averaging 1 minute per rinse.
 age * 365 - 365 = This will account for the first year of life when you don't brush your teeth. The result will give the approximate number of days you have been alive.
+78 - age = The amount of time they will spend the rest of their life on hygiene. The average life expectancy of women is 81 and men is 76 so I just used the average of those ages.
+if age is > 78 then age * 365 - 365 = This will account for those that are older than 78 and will just return how long they have spent throughout their life on hygiene.
  */
 
 alert("This little task will determine how long you spend keeping your teeth and your dentist happy each year and throughout your life.");//This is an alert that will let the user know the purpose of the task they are completing.
