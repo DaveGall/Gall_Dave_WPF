@@ -19,12 +19,14 @@ if age is > 78 then age * 365 - 365 = This will account for those that are older
 
 function beforeTime(age, quantity, length){//This will return the value for the amount of time before their current age.
     var priorDays = age * 365 - 365;//The formula for finding the information.
-    var lengthTime = quantity * length;
-    var totalTime = priorDays * lengthTime;
+    var lengthTime = quantity * length;//This is used for determining the length of time per day spent on hygiene.
+    var totalTime = priorDays * lengthTime;//Total of time from the first year of their life.
     return totalTime;//The return value from the function.
 }
-function afterAge(age){//This is the function for determining how long after their current age they will spend on hygiene.
+function afterAge(age, times, duration){//This is the function for determining how long after their current age they will spend on hygiene.
     var futureDays = (78 - age) * 365;//This is the formula for finding the information.
+    var timeLength = times * duration;//This is used for determining the length of time per day spent on hygiene.
+    var totalAfterAge = futureDays * timeLength;//This will determine the total amount of time spent on hygiene in the future.
     return futureDays;//The return value for this function.
 }
 
@@ -43,7 +45,7 @@ if(doYouFloss === "y" || doYouFloss ==="Y"){//If the answer to do you floss is y
     var rinse = prompt("Do you rinse with mouthwash? Y or N");//User input to find out if they rinse.
     if(rinse === "y" || rinse === "Y") {//Code to run if the response to rinse is yes.
         var manyRinse = Number(prompt("How many times do you rinse each day?"));//User input for the amount of times they rinse a day.
-
+        var rinseTime = 1;
         console.log("This will print out if the response to rinse is yes.");//Print if response to rinse is yes.
     }else{
         console.log("This will be the print out if no rinse.");//Print if response to rinse is no.
@@ -53,6 +55,7 @@ if(doYouFloss === "y" || doYouFloss ==="Y"){//If the answer to do you floss is y
     var rinse = prompt("Do you rinse with mouthwash? Y or N");//User response to find out if they rinse or not.
     if(rinse === "y" || rinse === "Y") {//This is the code that will run if the user selects yes
         var manyRinse = Number(prompt("How many times do you rinse each day?"));//Collect how many times the user flosses a day.
+        var rinseTime = 1;
 
         console.log("Yes rinse print out.");//Print if the response is yes to rinsing.
     }else{
@@ -60,7 +63,7 @@ if(doYouFloss === "y" || doYouFloss ==="Y"){//If the answer to do you floss is y
     }
 }
 
-alert("You have spent "+beforeTime(age, brushTeeth, lengthBrushing)+" minutes brushing your teeth so far.\nYou have spent "+beforeTime(age, timesFloss, timeFloss)+" minutes flossing your teeth so far.");//The beginnings of my statement for displaying the results of the information that was input.
+alert("You have spent "+beforeTime(age, brushTeeth, lengthBrushing)+" minutes brushing your teeth so far.\nYou have spent "+beforeTime(age, timesFloss, timeFloss)+" minutes flossing your teeth so far. \nYou have spent "+beforeTime(age, manyRinse, rinseTime)+" minutes rinsing so far.");//The beginnings of my statement for displaying the results of the information that was input.
 
 
 
