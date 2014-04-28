@@ -15,4 +15,16 @@ alert("This little task will determine how long you spend keeping your teeth and
 
 var brushTeeth = Number(prompt("How many times do you brush your teeth every day?"));//First prompt asking for how many times the user brushes their teeth each day.
 var lengthBrushing = Number(prompt("Approximately how many minutes do you spend brushing your teeth each time?"));//This is a prompt to get the amount of time the user brushes their teeth each time they brush.
-var doYouFloss = prompt("Do you floss your teeth?");//Asking the user if they floss during the day.
+var doYouFloss = prompt("Do you floss your teeth? Y or N");//Asking the user if they floss during the day.
+
+if(doYouFloss === "y" || doYouFloss ==="Y"){//If the answer to do you floss is yes this will be the set of commands.
+    var timesFloss = Number(prompt("How many times a day do you floss?"));
+    var timeFloss = Number(prompt("Approximately how many minutes do you floss each time?"));
+    var manyRinse = Number(prompt("How many times do you rinse each day?"));
+    var lengthRinse = Number(prompt("Approximately how long do you spend rinsing your mouth with mouthwash?"));
+
+}if(doYouFloss === "n" || doYouFloss ==="N"){
+    var rinse = prompt("Do you rinse with mouthwash? Y or N");
+    var manyRinse = Number(prompt("How many times do you rinse each day?"));
+    var lengthRinse = Number(prompt("Approximately how long do you spend rinsing your mouth with mouthwash?"));
+}
