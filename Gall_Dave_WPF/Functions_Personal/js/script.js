@@ -60,7 +60,7 @@ if(doYouFloss === "y" || doYouFloss ==="Y"){//If the answer to do you floss is y
     }
 }
 
-alert("You have spent "+beforeTime(age, brushTeeth, lengthBrushing)+" minutes brushing your teeth so far.");//The beginnings of my statement for displaying the results of the information that was input.
+alert("You have spent "+beforeTime(age, brushTeeth, lengthBrushing)+" minutes brushing your teeth so far.\nYou have spent "+beforeTime(age, timesFloss, timeFloss)+" minutes flossing your teeth so far.");//The beginnings of my statement for displaying the results of the information that was input.
 
 
 
