@@ -18,22 +18,22 @@ var lengthBrushing = Number(prompt("Approximately how many minutes do you spend 
 var doYouFloss = prompt("Do you floss your teeth? Y or N");//Asking the user if they floss during the day.
 
 if(doYouFloss === "y" || doYouFloss ==="Y"){//If the answer to do you floss is yes this will be the set of commands.
-    var timesFloss = Number(prompt("How many times a day do you floss?"));
-    var timeFloss = Number(prompt("Approximately how many minutes do you floss each time?"));
-    var rinse = prompt("Do you rinse with mouthwash? Y or N");
-    if(rinse === "y" || rinse === "Y") {
-        var manyRinse = Number(prompt("How many times do you rinse each day?"));
-        var lengthRinse = Number(prompt("Approximately how long do you spend rinsing your mouth with mouthwash?"));
+    var timesFloss = Number(prompt("How many times a day do you floss?"));//User input for how many times they floss a day.
+    var timeFloss = Number(prompt("Approximately how many minutes do you floss each time?"));//User input for how long they spend flossing each time.
+    var rinse = prompt("Do you rinse with mouthwash? Y or N");//User input to find out if they rinse.
+    if(rinse === "y" || rinse === "Y") {//Code to run if the response to rinse is yes.
+        var manyRinse = Number(prompt("How many times do you rinse each day?"));//User input for the amount of times they rinse a day.
+        var lengthRinse = Number(prompt("Approximately how long do you spend rinsing your mouth with mouthwash?"));//User input for the amount of time they spend rinsing.
         console.log("This will print out if the response to rinse is yes.");//Print if response to rinse is yes.
     }else{
         console.log("This will be the print out if no rinse.");//Print if response to rinse is no.
     }
 
-}if(doYouFloss === "n" || doYouFloss ==="N"){
-    var rinse = prompt("Do you rinse with mouthwash? Y or N");
-    if(rinse === "y" || rinse === "Y") {
-        var manyRinse = Number(prompt("How many times do you rinse each day?"));
-        var lengthRinse = Number(prompt("Approximately how long do you spend rinsing your mouth with mouthwash?"));
+}if(doYouFloss === "n" || doYouFloss ==="N"){//Code to run if the answer to flossing is no.
+    var rinse = prompt("Do you rinse with mouthwash? Y or N");//User response to find out if they rinse or not.
+    if(rinse === "y" || rinse === "Y") {//This is the code that will run if the user selects yes
+        var manyRinse = Number(prompt("How many times do you rinse each day?"));//Collect how many times the user flosses a day.
+        var lengthRinse = Number(prompt("Approximately how long do you spend rinsing your mouth with mouthwash?"));//Collects how long they spend rinsing each time.
         console.log("Yes rinse print out.");//Print if the response is yes to rinsing.
     }else{
         console.log("No rinse print out.");//Print if response to rinse is no.
