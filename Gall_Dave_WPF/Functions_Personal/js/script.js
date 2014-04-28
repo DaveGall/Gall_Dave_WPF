@@ -27,7 +27,7 @@ function afterAge(age, times, duration){//This is the function for determining h
     var futureDays = (78 - age) * 365;//This is the formula for finding the information.
     var timeLength = times * duration;//This is used for determining the length of time per day spent on hygiene.
     var totalAfterAge = futureDays * timeLength;//This will determine the total amount of time spent on hygiene in the future.
-    return futureDays;//The return value for this function.
+    return totalAfterAge;//The return value for this function.
 }
 
 alert("This little task will determine how long you spend keeping your teeth and your dentist happy each year and throughout your life.");//This is an alert that will let the user know the purpose of the task they are completing.
@@ -63,7 +63,7 @@ if(doYouFloss === "y" || doYouFloss ==="Y"){//If the answer to do you floss is y
     }
 }
 
-alert("You have spent "+beforeTime(age, brushTeeth, lengthBrushing)+" minutes brushing your teeth so far.\nYou have spent "+beforeTime(age, timesFloss, timeFloss)+" minutes flossing your teeth so far. \nYou have spent "+beforeTime(age, manyRinse, rinseTime)+" minutes rinsing so far.");//The beginnings of my statement for displaying the results of the information that was input.
+alert("You have spent "+beforeTime(age, brushTeeth, lengthBrushing)+" minutes brushing your teeth so far.\nYou have spent "+beforeTime(age, timesFloss, timeFloss)+" minutes flossing your teeth so far. \nYou have spent "+beforeTime(age, manyRinse, rinseTime)+" minutes rinsing so far. \nAt your current rate of hygiene you will brush approximately another "+afterAge(age, brushTeeth, lengthBrushing)+" minutes in your life.");//The beginnings of my statement for displaying the results of the information that was input.
 
 
 
