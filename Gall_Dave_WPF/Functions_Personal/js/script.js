@@ -17,13 +17,17 @@ age * 365 - 365 = This will account for the first year of life when you don't br
 if age is > 78 then age * 365 - 365 = This will account for those that are older than 78 and will just return how long they have spent throughout their life on hygiene.
  */
 
-function beforeTime(age){
-    var priorDays = age * 365 - 365;
-    return priorDays;
+function beforeTime(age){//This will return the value for the amount of time before their current age.
+    var priorDays = age * 365 - 365;//The formula for finding the information.
+    return priorDays;//The return value from the function.
     }
-function afterAge(age){
-    var futureDays = (78 - age) * 365;
-    return futureDays;
+function afterAge(age){//This is the function for determining how long after their current age they will spend on hygiene.
+    var futureDays = (78 - age) * 365;//This is the formula for finding the information.
+    return futureDays;//The return value for this function.
+}
+function dailyMinutes(quantity, length){//This is the function for determining the daily time spent on hygiene.
+    var dailyTotal = quantity * length;//This is the formula for getting the information. Information will be passed to these two variables.
+    return dailyTotal;//The return value of the equation.
 }
 alert("This little task will determine how long you spend keeping your teeth and your dentist happy each year and throughout your life.");//This is an alert that will let the user know the purpose of the task they are completing.
 var age = Number(prompt("How old are you? Please use numbers."));//User input for their age to use for determining how long they have been spending on hygiene.
