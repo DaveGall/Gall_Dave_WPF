@@ -12,7 +12,7 @@ No need for a prompt for amount of time that takes as we will average it to 1 mi
 times brushing * length brushing = length brushing a day
 times flossing * time flossing = length flossing a day
 many rinse would just equal itself since we are averaging 1 minute per rinse.
-
+age * 365 - 365 = This will account for the first year of life when you don't brush your teeth. The result will give the approximate number of days you have been alive.
  */
 
 alert("This little task will determine how long you spend keeping your teeth and your dentist happy each year and throughout your life.");//This is an alert that will let the user know the purpose of the task they are completing.
