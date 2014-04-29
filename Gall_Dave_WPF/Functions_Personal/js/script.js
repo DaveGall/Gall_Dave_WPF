@@ -56,25 +56,25 @@ if(doYouFloss === "y" || doYouFloss ==="Y"){//If the answer to do you floss is y
     }
 }//This next statement will display if all variables and inputs are selected.
 if((doYouFloss === "y" || doYouFloss === "Y") && (rinseFloss === "y" || rinseFloss === "Y") && (age < 78)) {
-    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth, " + beforeTime(age, timesFloss, timeFloss) + " minutes flossing your teeth and " + beforeTime(age, manyRinseFloss, rinseTimeFloss) + " minutes rinsing so far. \nAt your current rate of hygiene you will brush approximately another " + afterAge(age, brushTeeth, lengthBrushing) + " minutes, floss another " + afterAge(age, timesFloss, timeFloss) + " minutes and rinse another " + afterAge(age, manyRinseFloss, rinseTimeFloss) + " minutes in your life.");//The beginnings of my statement for displaying the results of the information that was input.
+    console.log("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth, " + beforeTime(age, timesFloss, timeFloss) + " minutes flossing your teeth and " + beforeTime(age, manyRinseFloss, rinseTimeFloss) + " minutes rinsing so far. \nAt your current rate of hygiene you will brush approximately another " + afterAge(age, brushTeeth, lengthBrushing) + " minutes, floss another " + afterAge(age, timesFloss, timeFloss) + " minutes and rinse another " + afterAge(age, manyRinseFloss, rinseTimeFloss) + " minutes in your life.");//The beginnings of my statement for displaying the results of the information that was input.
     //This next statement will display if just floss is true and rinse is not selected.
 }if((doYouFloss === "y" || doYouFloss === "Y") && (rinseFloss === "n" || rinseFloss === "N") && (age < 78)){
-    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth, " + beforeTime(age, timesFloss, timeFloss) + " minutes flossing your teeth so far. \nAt your current rate of hygiene you will brush approximately another " + afterAge(age, brushTeeth, lengthBrushing) + " minutes and floss another " + afterAge(age, timesFloss, timeFloss) + " minutes in your life.");
+    console.log("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth, " + beforeTime(age, timesFloss, timeFloss) + " minutes flossing your teeth so far. \nAt your current rate of hygiene you will brush approximately another " + afterAge(age, brushTeeth, lengthBrushing) + " minutes and floss another " + afterAge(age, timesFloss, timeFloss) + " minutes in your life.");
 }
 //This next statement will be displayed if the user chooses rinsing as yes and flossing as no.
 if((doYouFloss === "n" || doYouFloss === "N") && (rinseNoFloss === "y" || rinseNoFloss === "Y") && (age < 78)){
-    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth and "+beforeTime(age, manyRinse, rinseTime) + " minutes rinsing so far. \nAt your current rate of hygiene you will brush approximately another " + afterAge(age, brushTeeth, lengthBrushing)+" minutes and rinse another "+afterAge(age, manyRinse, rinseTime) + " minutes in your life.");
+    console.log("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth and "+beforeTime(age, manyRinse, rinseTime) + " minutes rinsing so far. \nAt your current rate of hygiene you will brush approximately another " + afterAge(age, brushTeeth, lengthBrushing)+" minutes and rinse another "+afterAge(age, manyRinse, rinseTime) + " minutes in your life.");
 }if((doYouFloss === "n" || doYouFloss === "N") && (rinseNoFloss === "n" || rinseNoFloss === "N") && (age < 78)){//This will be displayed if the user just brushes their teeth.
-    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth so far in your life. \nAt your current rate of hygiene you will spend approximately "+afterAge(age, brushTeeth, lengthBrushing)+" minutes more brushing your teeth.");
+    console.log("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth so far in your life. \nAt your current rate of hygiene you will spend approximately "+afterAge(age, brushTeeth, lengthBrushing)+" minutes more brushing your teeth.");
     //These next lines of statements will be for those users who are 78 or older and will just run my first function block. They are copied from the code above except for the fact that I have taken out the afterAge function call.
 }if((age >=78) && (doYouFloss === "y" || doYouFloss === "Y") && (rinseFloss === "y" || rinseFloss === "Y")){
-    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth, " + beforeTime(age, timesFloss, timeFloss) + " minutes flossing your teeth and " + beforeTime(age, manyRinseFloss, rinseTimeFloss) + " minutes flossing so far.");
+    console.log("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth, " + beforeTime(age, timesFloss, timeFloss) + " minutes flossing your teeth and " + beforeTime(age, manyRinseFloss, rinseTimeFloss) + " minutes flossing so far.");
 }if((age >= 78) && (doYouFloss === "y" || doYouFloss === "Y") && (rinseFloss === "n" || rinseFloss === "N")){
-    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth, " + beforeTime(age, timesFloss, timeFloss) + " minutes flossing your teeth so far.");
+    console.log("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth, " + beforeTime(age, timesFloss, timeFloss) + " minutes flossing your teeth so far.");
 }if((age >= 78) && (doYouFloss === "n" || doYouFloss === "N") && (rinseNoFloss === "y" || rinseNoFloss === "Y")){
-    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth and "+beforeTime(age, manyRinse, rinseTime) + " minutes rinsing so far.");
+    console.log("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth and "+beforeTime(age, manyRinse, rinseTime) + " minutes rinsing so far.");
 }if((age >= 78) && (doYouFloss === "n" || doYouFloss === "N") && (rinseNoFloss === "n" || rinseNoFloss === "N")){
-    alert("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth so far in your life.");
+    console.log("You have spent " + beforeTime(age, brushTeeth, lengthBrushing) + " minutes brushing your teeth so far in your life.");
 }
 
 
