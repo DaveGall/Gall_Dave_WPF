@@ -10,7 +10,10 @@ function profits(quant, pay, sell){//This will determine how many tickets the us
     var ticketSalesNeeded = quant * pay / sell + 1;//Equation for finding the number of tickets the user will need to sell to start making a profit.
     return ticketSalesNeeded;//The return value of ticket sales needed to display.
 }
-
+function percentProfit(p, s){
+    var yourPercentage = s / p;
+    return yourPercentage;
+}
 
 alert("This is a little calculator that will help you figure out how many tickets you will need to sell in order to start making a profit.");
 var quantity = Number(prompt("How many tickets have you purchased to sell?"));//Gets the amount of tickets the user has purchased to sell.
