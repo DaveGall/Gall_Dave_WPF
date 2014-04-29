@@ -16,6 +16,8 @@ var quantity = Number(prompt("How many tickets do you have to sell?"));//This wi
 var price = Number(prompt("How much does each ticket cost?"));//Gets the cost of each ticket from the user.
 var percentage = Number(prompt("What percentage of each ticket do you make? Please enter a whole number."));//This will get the percentage that the user will keep from each ticket.
 
+alert(parseFloat(profits(quantity, price, percentage)).toFixed(2));//The amount the user will make from the sale of their tickets.
+
 
 
 
