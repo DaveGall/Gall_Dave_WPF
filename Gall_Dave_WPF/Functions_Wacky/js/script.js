@@ -19,4 +19,5 @@ var width = Number(prompt("What is the width of your aquarium?"));//Variable pro
 var height = Number(prompt("What is the height of your fish tank?"));//Variable prompt to get the height of the tank from the user.
 var smallFish = 2;//size of small fish that you could put in your tank.
 var mediumFish = 4;//size of medium fish you could put in your tank.
+var largeFish = 6;//size of large fish you could put in your tank.
 alert(parseFloat(fishTank(length, width, height).toFixed(2)));
