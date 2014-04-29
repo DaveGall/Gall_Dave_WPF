@@ -6,8 +6,9 @@ Price of tickets to sell
 Percentage of sale that the company keeps
 */
 
-function profits(quant, pr, per){
-    var yourPercent = 
+function profits(quant, pr, per){//
+    var yourPercent = quant * pr * (per / 100);//Equation for finding the percentage the user will keep.
+    return yourPercent;//Return value of your percentage.
 }
 
 alert("This is a little calculator that will help you determine your profits for the tickets you sell for a concert or any entertainment event. \nPlease input numbers into the box there is no need to write dollar or percentage signs.");
