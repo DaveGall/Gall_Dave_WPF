@@ -15,3 +15,4 @@ function fishTank(l, w, h){//These will be my variables that will be run through
 alert("This calculator will determine the amount of fish you should stock your new fish tank with. Please use inches when writing in the dimensions of your tank.");//Just a little alert that will let the user know the purpose of this calculator
 var length = Number(prompt("What is the length of your fish tank?"));//Variable for gathering the length of the fish tank.
 var width = Number(prompt("What is the width of your aquarium?"));//Variable prompt to get the width from the user.
+var height = Number(prompt("What is the height of your fish tank?"));//Variable prompt to get the height of the tank from the user.
