@@ -16,7 +16,9 @@ var quantity = Number(prompt("How many tickets have you purchased to sell?"));//
 var priceYouPay = Number(prompt("How much does it cost you to purchase each ticket?"));//Gets the price the user pays for each ticket.
 var priceYouSell = Number(prompt("How much do you plan on selling each ticket for each ticket?"));//Gets the price the user will sell the tickets for.
 
-alert(profits(quantity, priceYouPay, priceYouSell));
+alert("You will need to sell "+profits(quantity, priceYouPay, priceYouSell)+" tickets to start making a profit.");
+
+console.log("You will need to sell "+profits(quantity, priceYouPay, priceYouSell)+" tickets to start making a profit.");
 
 
 
