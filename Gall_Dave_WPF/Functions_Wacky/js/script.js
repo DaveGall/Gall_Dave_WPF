@@ -16,3 +16,5 @@ alert("This calculator will determine the amount of fish you should stock your n
 var length = Number(prompt("What is the length of your fish tank?"));//Variable for gathering the length of the fish tank.
 var width = Number(prompt("What is the width of your aquarium?"));//Variable prompt to get the width from the user.
 var height = Number(prompt("What is the height of your fish tank?"));//Variable prompt to get the height of the tank from the user.
+
+alert(parseFloat(fishTank(length, width, height).toFixed(2)));
