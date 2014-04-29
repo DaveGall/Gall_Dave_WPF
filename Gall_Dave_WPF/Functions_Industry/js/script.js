@@ -13,10 +13,10 @@ function profits(quant, pr, per){//
 
 alert("This is a little calculator that will help you determine your profits for the tickets you sell for a concert or any entertainment event. \nPlease input numbers into the box there is no need to write dollar or percentage signs.");
 var quantity = Number(prompt("How many tickets do you have to sell?"));//This will grab the quantity of tickets from the user.
-var price = Number(prompt("How much does each ticket cost?"));//Gets the cost of each ticket from the user.
-var percentage = Number(prompt("What percentage of each ticket do you make? Please enter a whole number."));//This will get the percentage that the user will keep from each ticket.
+var priceYouSell = Number(prompt("How much does it cost you to purchase each ticket?"));//Gets the cost user pays for each ticket.
+var priceYouPay = Number(prompt("How much are you going to sell each ticket for?"));
 
-alert(parseFloat(profits(quantity, price, percentage)).toFixed(2));//The amount the user will make from the sale of their tickets.
+
 
 
 
