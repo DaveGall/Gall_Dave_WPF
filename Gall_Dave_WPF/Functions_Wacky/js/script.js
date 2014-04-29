@@ -13,7 +13,8 @@ function fishTank(l, w, h){//These will be my variables that will be run through
     return gallons;
 }
 function numberOfFish(f, g){//This function will hold the formula for telling the user how many fish they can have in their tank.
-    var tankHold
+    var tankHold = g / f;//divide the gallons in the tank by the fish size to determine the quantity of fish you can have.
+    return tankHold;//Return value of the equation for tankHold.
 }
 alert("This calculator will determine the amount of fish you should stock your new fish tank with. Please use inches when writing in the dimensions of your tank.");//Just a little alert that will let the user know the purpose of this calculator
 var length = Number(prompt("What is the length of your fish tank?"));//Variable for gathering the length of the fish tank.
