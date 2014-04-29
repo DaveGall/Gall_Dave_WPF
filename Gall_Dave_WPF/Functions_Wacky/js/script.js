@@ -29,7 +29,9 @@ var mediumFish = 4;//size of medium fish you could put in your tank.
 var largeFish = 6;//size of large fish you could put in your tank.
 var tankGallons = (parseInt(fishTank(length, width, height)));//created a variable using the results from the first function that can be run through the second function for getting the number of fish you can put in the tank.
 var tankThirds = tankGallons * .33;//This variable will divide the tank into thirds for a variety of sizes of fish.
-alert("Your fish tank is approximately "+parseInt(fishTank(length, width, height))+" gallons. \nYou could populate your tank with approximately "+parseInt(numberOfFish(smallFish, tankGallons))+" small fish around 2 inches long. \n"+parseInt(numberOfFish(mediumFish, tankGallons))+" medium fish around 4 inches long. \n"+parseInt(numberOfFish(largeFish, tankGallons))+" large fish around 6 inches long.");//Alert to see if all the functions run properly.
+alert("Your fish tank is approximately "+parseInt(fishTank(length, width, height))+" gallons. \nYou could populate your tank with approximately "+parseInt(numberOfFish(smallFish, tankGallons))+" small fish around 2 inches long. \n"+parseInt(numberOfFish(mediumFish, tankGallons))+" medium fish around 4 inches long. \n"+parseInt(numberOfFish(largeFish, tankGallons))+" large fish around 6 inches long. \nIf you would like a variety of fish then you could populate your tank with; \n"+parseInt(varietyFish(tankThirds, smallFish))+" small fish, "+parseInt(varietyFish(tankThirds, mediumFish))+" medium fish and "+parseInt(varietyFish(tankThirds, largeFish))+" large fish.");//completed statement to display the results to the user.
 alert(parseInt(varietyFish(tankThirds, smallFish)));
+alert(parseInt(varietyFish(tankThirds, mediumFish)));
+alert(parseInt(varietyFish(tankThirds, largeFish)));
 
 
