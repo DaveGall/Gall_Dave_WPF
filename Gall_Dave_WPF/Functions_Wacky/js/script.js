@@ -16,6 +16,10 @@ function numberOfFish(f, g){//This function will hold the formula for telling th
     var tankHold = g / f;//divide the gallons in the tank by the fish size to determine the quantity of fish you can have.
     return tankHold;//Return value of the equation for tankHold.
 }
+function varietyFish(t, s){//This function will calculate the number of fish per thirds of the tank for a variety of sizes.
+    var fish = t / s;
+    return fish;
+}
 alert("This calculator will determine the amount of fish you should stock your new fish tank with. Please use inches when writing in the dimensions of your tank.");//Just a little alert that will let the user know the purpose of this calculator
 var length = Number(prompt("What is the length of your fish tank?"));//Variable for gathering the length of the fish tank.
 var width = Number(prompt("What is the width of your aquarium?"));//Variable prompt to get the width from the user.
