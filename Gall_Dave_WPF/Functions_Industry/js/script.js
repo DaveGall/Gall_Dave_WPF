@@ -6,9 +6,9 @@ Price of tickets to sell
 Percentage of sale that the company keeps
 */
 
-function profits(quant, pr, per){//
-    var yourPercent = quant * pr * (per / 100);//Equation for finding the percentage the user will keep.
-    return yourPercent;//Return value of your percentage.
+function profits(quant, sell, pay){//This will determine how many tickets the user needs to sell to make a profit.
+    var ticketSalesNeeded = quant * pay / sell;//Equation for finding the number of tickets the user will need to sell to start making a profit.
+    return ticketSalesNeeded;//The return value of ticket sales needed to display.
 }
 
 alert("This is a little calculator that will help you figure out how many tickets you will need to sell in order to start making a profit.");
