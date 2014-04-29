@@ -7,9 +7,10 @@ That answer divided by 231 ( this is how many cubic inches are in a gallon.
 That will give you the number of inches of fish you can have in your tank.
 */
 //Setting up my function for the code I am writing.
-function fishTank(length, width, height){//These will be my variables that will be run through my function.
-    var volume = length * width * height;//Equation for getting the volume of the users tank.
+function fishTank(l, w, h){//These will be my variables that will be run through my function.
+    var volume = l * w * h;//Equation for getting the volume of the users tank.
     var gallons = volume / 231;//Equation for determining the amount of gallons in the fish tank.
+    return gallons;
 }
 
 
