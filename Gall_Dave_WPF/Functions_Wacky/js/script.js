@@ -23,8 +23,11 @@ var height = Number(prompt("What is the height of your fish tank?"));//Variable 
 var smallFish = 2;//size of small fish that you could put in your tank.
 var mediumFish = 4;//size of medium fish you could put in your tank.
 var largeFish = 6;//size of large fish you could put in your tank.
-var tankGallons = (parseFloat(fishTank(length, width, height).toFixed(2)));//created a variable using the results from the first function that can be run through the second function for getting the number of fish you can put in the tank.
-alert(parseInt(numberOfFish(smallFish, tankGallons)));//Checked to see if my function worked properly.
-alert(parseInt(numberOfFish(mediumFish, tankGallons)));//Checked to see if my function worked properly.
-alert(parseInt(numberOfFish(largeFish, tankGallons)));//Checked to see if my function worked properly.
+var tankGallons = (parseInt(fishTank(length, width, height)));//created a variable using the results from the first function that can be run through the second function for getting the number of fish you can put in the tank.
+var tankThirds = tankGallons * .33;//This variable will divide the tank into thirds for a variety of sizes of fish.
+alert("Your fish tank is approximately "+parseInt(fishTank(length, width, height))+" gallons.");//Alert to see if all the functions run properly.
+alert("You could populate your tank with approximately "+parseInt(numberOfFish(smallFish, tankGallons))+" small fish around 2 inches long.");//Checked to see if my function worked properly.
+alert("You could populate your tank with approximately "+parseInt(numberOfFish(mediumFish, tankGallons))+" medium fish around 4 inches long.");//Checked to see if my function worked properly.
+alert("You could populate your tank with approximately "+parseInt(numberOfFish(largeFish, tankGallons))+" large fish around 6 inches long.");//Checked to see if my function worked properly.
+alert(parseInt(tankThirds));
 
