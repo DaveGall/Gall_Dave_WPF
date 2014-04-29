@@ -12,5 +12,5 @@ function fishTank(l, w, h){//These will be my variables that will be run through
     var gallons = volume / 231;//Equation for determining the amount of gallons in the fish tank.
     return gallons;
 }
-
-
+alert("This calculator will determine the amount of fish you should stock your new fish tank with. Please use inches when writing in the dimensions of your tank.");//Just a little alert that will let the user know the purpose of this calculator
+var length =Number(prompt("What is the length of your fish tank?"));//Variable for gathering the length of the fish tank.
