@@ -11,7 +11,7 @@ function profits(quant, pay, sell){//This will determine how many tickets the us
     return ticketSalesNeeded;//The return value of ticket sales needed to display.
 }
 function percentProfit(p, s){
-    var yourPercentage = s / p;
+    var yourPercentage = s / p * 100;//This equation will determine the percentage of profit you will make off each ticket.
     return yourPercentage;
 }
 
@@ -21,7 +21,7 @@ var priceYouPay = Number(prompt("How much does it cost you to purchase each tick
 var priceYouSell = Number(prompt("How much do you plan on selling each ticket for each ticket?"));//Gets the price the user will sell the tickets for.
 var salesNeeded = profits(quantity, priceYouPay, priceYouSell);//variable for the result of the function.
 alert("You will need to sell "+profits(quantity, priceYouPay, priceYouSell)+" tickets to start making a profit.");
-
+alert("Your profit margin on each ticket will be "+parseInt(percentProfit(priceYouPay, priceYouSell))+"%.");
 console.log("You will need to sell "+profits(quantity, priceYouPay, priceYouSell)+" tickets to start making a profit.");
 
 
