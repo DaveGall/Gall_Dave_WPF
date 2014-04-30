@@ -17,8 +17,17 @@ function percentProfit(p, s){
 
 alert("This is a little calculator that will help you figure out how many tickets you will need to sell in order to start making a profit and to tell you your profit margin with the price you choose to sell your tickets at.");
 var quantity = Number(prompt("How many tickets have you purchased to sell?"));//Gets the amount of tickets the user has purchased to sell.
+if(quantity === ""){//If there is no value in the prompt box.
+    prompt("Please enter a valid response.");
+}
 var priceYouPay = Number(prompt("How much did each ticket cost you? Just a numerical value please."));//Gets the price the user pays for each ticket.
+if(priceYouPay === ""){//If there is no value in the prompt box.
+    prompt("Please enter a valid response.");
+}
 var priceYouSell = Number(prompt("How much do you plan on selling each ticket for? Just a numerical value please."));//Gets the price the user will sell the tickets for.
+if(priceYouSell === ""){//If there is no value in the prompt box.
+    prompt("Please enter a valid response.");
+}
 alert("You will need to sell "+profits(quantity, priceYouPay, priceYouSell)+" tickets to start making a profit.\nYour profit margin on each ticket will be "+parseInt(percentProfit(priceYouPay, priceYouSell))+"%.");
 
 console.log("You will need to sell "+profits(quantity, priceYouPay, priceYouSell)+" tickets to start making a profit.\nYour profit margin on each ticket will be "+parseInt(percentProfit(priceYouPay, priceYouSell))+"%.");
